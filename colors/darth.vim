@@ -12,7 +12,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name="vader"
+let colors_name="darth"
 
 " Default colors
 hi Normal guifg=#BCBCBC guibg=black gui=NONE ctermfg=gray ctermbg=NONE cterm=NONE
