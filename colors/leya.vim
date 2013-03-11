@@ -132,6 +132,9 @@ hi link helpHyperTextJump Statement
 hi link htmlH1 Normal
 hi link javaScript Normal
 hi link htmlTag Normal
+hi link htmlTagN Normal
+hi link htmlTagName Normal
+hi link htmlSpecialTagName Normal
 hi link htmlEndTag Normal
 
 " Todo
