@@ -12,7 +12,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name="vader"
+let colors_name="leya"
 
 " Top groups
 hi Comment guifg=#93a1a1 guibg=NONE gui=NONE ctermfg=241 ctermbg=NONE cterm=NONE
