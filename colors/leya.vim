@@ -66,9 +66,9 @@ hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=N
 hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=white ctermbg=33 cterm=NONE
 hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=236 ctermbg=gray cterm=NONE
-hi TabLine guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
-hi TabLineFill guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
-hi TabLineSel guifg=#ffffff guibg=#268bd2 gui=bold ctermfg=white ctermbg=33 cterm=NONE
+hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
+hi TabLineFill guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
+hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=white ctermbg=33 cterm=NONE
 hi Title guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=darkcyan ctermbg=NONE gui=NONE
 hi Visual guifg=#FFFFFF guibg=#999999 gui=NONE ctermfg=white ctermbg=darkgray gui=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=white ctermbg=red cterm=NONE
