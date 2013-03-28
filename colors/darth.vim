@@ -46,7 +46,7 @@ hi DiffDelete guifg=#000000 guibg=#FF8888 gui=NONE ctermfg=black ctermbg=darkred
 hi DiffText guifg=#000000 guibg=#DDF8CC gui=NONE ctermfg=black ctermbg=green cterm=NONE
 hi ErrorMsg guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=black ctermbg=red cterm=NONE
 hi VertSplit guifg=#666666 guibg=#666666 gui=NONE ctermfg=darkgray ctermbg=darkgray cterm=NONE
-hi Folded guifg=#000000 guibg=#666666 gui=NONE ctermfg=16 ctermbg=darkgray cterm=NONE
+hi Folded guifg=#000000 guibg=#666666 gui=NONE ctermfg=240 ctermbg=234 cterm=NONE
 hi FoldColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=darkgray cterm=NONE
 hi SignColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi IncSearch guifg=#262626 guibg=#FFFFFF gui=NONE ctermfg=232 ctermbg=white cterm=NONE
@@ -123,6 +123,7 @@ hi coffeeSpecialVar guifg=#DDDDDD guibg=NONE
 hi link cssClassName Normal
 hi link cssIdentifier Normal
 hi link cssTagName Normal
+hi link cssVendor Statement
 
 " Python
 hi link pythonEscape StringSpecial
@@ -141,6 +142,14 @@ hi link htmlEndTag Normal
 hi link htmlH1 Normal
 hi link htmlItalic Special
 hi link javaScript Normal
+hi link htmlSpecialTagName Normal
+hi link htmlTagName Normal
+
+" Todo
+hi link TodoItemAdditionalText Normal
+hi link TodoItemDone Comment
+hi link TodoItem Constant
+hi link TodoTitle Statement
 
 " Diff
 hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE

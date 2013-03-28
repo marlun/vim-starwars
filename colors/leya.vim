@@ -105,6 +105,8 @@ hi link javaScriptFunction Statement
 hi link javaScriptNumber Number
 hi link javaScriptIdentifier Statement
 hi link javaScriptNull Type
+hi link javaScriptCommonJS Statement
+hi link jsCommonJS Statement
 hi link javaScriptSpecial StringSpecial
 
 " CSS
@@ -140,7 +142,8 @@ hi link htmlEndTag Normal
 " Todo
 hi link TodoItemAdditionalText Normal
 hi link TodoItemDone Comment
-hi link TodoItem Type
+hi link TodoItem Constant
+hi link TodoTitle Statement
 
 " Markdown
 hi markdownH2 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
@@ -148,3 +151,4 @@ hi markdownH1 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=b
 
 " Jinja
 hi link JinjaTagBlock Normal
+hi link JinjaVarBlock Normal
