@@ -72,7 +72,7 @@ hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=white ctermbg=33 cter
 hi Title guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=darkcyan ctermbg=NONE gui=NONE
 hi Visual guifg=#FFFFFF guibg=#999999 gui=NONE ctermfg=white ctermbg=darkgray gui=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=white ctermbg=red cterm=NONE
-hi WildMenu guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=yellow ctermbg=NONE cterm=NONE
+hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
 
 " SVN
 hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
