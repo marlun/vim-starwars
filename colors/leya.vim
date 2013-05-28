@@ -35,17 +35,23 @@ hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cter
 " UI
 hi ColorColumn guifg=NONE guibg=#FBEECB gui=NONE ctermfg=NONE ctermbg=lightred cterm=NONE
 hi Cursor guifg=NONE guibg=NONE gui=REVERSE ctermfg=NONE ctermbg=NONE cterm=REVERSE term=REVERSE
-hi CursorColumn guifg=NONE guibg=#121212 gui=NONE ctermfg=NONE ctermbg=223 cterm=NONE
-hi CursorLine guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=223 cterm=NONE
+hi CursorColumn guifg=NONE guibg=#121212 gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+hi CursorLine guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+hi Directory guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
+hi ErrorMsg guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=160 cterm=NONE
 hi FoldColumn guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=16 ctermbg=144 cterm=NONE
 hi Folded guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=16 ctermbg=144 cterm=NONE
 hi IncSearch guifg=#EEC900 guibg=#262626 gui=NONE ctermfg=220 ctermbg=16 cterm=NONE
 hi Normal guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=16 ctermbg=230 cterm=NONE
 hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi Search guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
-hi Directory guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
-hi ErrorMsg guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
-hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=231 ctermbg=202 cterm=NONE
+hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=255 ctermbg=33 cterm=NONE
+hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=236 ctermbg=254 cterm=NONE
+hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
+hi TabLineFill guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
+hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=255 ctermbg=33 cterm=NONE
+hi Visual guifg=#FFFFFF guibg=#999999 gui=NONE ctermfg=NONE ctermbg=187 gui=NONE
+hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 
 hi DiffAdd guifg=#000000 guibg=#99FF99 gui=NONE ctermfg=black ctermbg=darkgreen cterm=NONE
 hi DiffChange guifg=#000000 guibg=#99FF99 gui=NONE ctermfg=black ctermbg=darkgreen cterm=NONE
@@ -67,18 +73,14 @@ hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE 
 hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
 hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
-hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=white ctermbg=33 cterm=NONE
-hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=236 ctermbg=gray cterm=NONE
-hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
-hi TabLineFill guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
-hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=white ctermbg=33 cterm=NONE
 hi Title guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=darkcyan ctermbg=NONE gui=NONE
-hi Visual guifg=#FFFFFF guibg=#999999 gui=NONE ctermfg=white ctermbg=darkgray gui=NONE
 hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
 
-" SVN
-hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
-hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
+" GIT
+hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
+hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
+hi link gitcommitSelectedType Statement
+hi link gitcommitSelectedFile Normal
 
 " Statusline
 hi link User1 Error
@@ -105,11 +107,14 @@ hi link PhpLocalVarCheckError Comment
 " JavaScript
 hi link javaScriptFunction Statement
 hi link javaScriptNumber Number
-hi link javaScriptIdentifier Statement
 hi link javaScriptNull Type
 hi link javaScriptCommonJS Statement
 hi link jsCommonJS Statement
+hi link jsLabel Special
+hi link jsBoolean Type
 hi link javaScriptSpecial StringSpecial
+hi link jsGlobalObjects Type
+hi link javaScriptIdentifier Statement
 
 " CSS
 hi link cssClassName Normal
