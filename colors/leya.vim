@@ -50,7 +50,7 @@ hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=236 ctermbg=254 cterm=
 hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
 hi TabLineFill guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
 hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=255 ctermbg=33 cterm=NONE
-hi Visual guifg=#FFFFFF guibg=#999999 gui=NONE ctermfg=NONE ctermbg=187 gui=NONE
+hi Visual guifg=NONE guibg=#ded9c7 gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 
 hi DiffAdd guifg=#000000 guibg=#99FF99 gui=NONE ctermfg=black ctermbg=darkgreen cterm=NONE
@@ -64,7 +64,7 @@ hi MatchParen guifg=#262626 guibg=#EEC900 gui=bold ctermfg=darkyellow ctermbg=NO
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi NonText guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
-hi Pmenu guifg=#111111 guibg=#999999 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
+hi Pmenu guifg=#111111 guibg=#cccccc gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=darkgray ctermbg=darkgray cterm=NONE
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=black ctermbg=NONE cterm=NONE
@@ -91,6 +91,7 @@ hi link StringSpecial Special
 
 " PHP
 hi link phpComparison Normal
+hi link phpConstant Normal
 hi link phpMemberSelector Normal
 hi link phpOperator Normal
 hi link phpParent Normal
@@ -102,7 +103,8 @@ hi link phpVarSelector Normal
 hi link phpFunctions Type
 hi link phpInclude phpFunctions
 hi link phpDefine Statement
-hi link PhpLocalVarCheckError Comment
+hi link phpLocalVarCheckError Comment
+hi link phpBackslashSequences Special
 
 " JavaScript
 hi link javaScriptFunction Statement
@@ -145,6 +147,7 @@ hi link htmlTagN Normal
 hi link htmlTagName Normal
 hi link htmlSpecialTagName Normal
 hi link htmlEndTag Normal
+hi htmlLink guifg=NONE guibg=#e3fbc1 gui=NONE ctermfg=NONE ctermbg=156 cterm=NONE
 
 " Todo
 hi link TodoItemAdditionalText Normal

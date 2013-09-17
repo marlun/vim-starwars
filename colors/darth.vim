@@ -85,6 +85,7 @@ hi link StorageClass Keyword
 hi link StringSpecial Special
 
 " PHP
+hi link phpBackslashSequences Number
 hi link phpComparison Normal
 hi link phpMemberSelector Normal
 hi link phpOperator Normal
