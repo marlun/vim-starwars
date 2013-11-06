@@ -15,13 +15,13 @@ endif
 let colors_name="leya"
 
 " Code syntax groups (:h group-name)
-hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=55 ctermbg=NONE cterm=NONE
+hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi Comment guifg=#93a1a1 guibg=NONE gui=NONE ctermfg=244 ctermbg=NONE cterm=NONE
 hi Constant guifg=#528323 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
-hi Number guifg=#D375D0 guibg=NONE gui=NONE ctermfg=55 ctermbg=NONE cterm=NONE
+hi Number guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Statement guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
@@ -91,10 +91,12 @@ hi link StringSpecial Special
 
 " PHP
 hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=55 ctermbg=NONE cterm=NONE
+hi link phpBrackets Normal
 hi link phpClasses Type
 hi link phpComparison Normal
 hi link phpConstant Normal
 hi link phpCoreConstant Special
+hi link phpinterpSimpleBracketsInner Special
 hi link phpMemberSelector Normal
 hi link phpOperator Normal
 hi link phpParent Normal
@@ -117,7 +119,9 @@ hi link javaScriptNull Type
 hi link javaScriptCommonJS Statement
 hi link jsCommonJS Statement
 hi link jsLabel Special
-hi link jsBoolean Type
+hi link jsBoolean Boolean
+hi link jsPrototype Type
+hi link jsFunction Statement
 hi link javaScriptSpecial StringSpecial
 hi link jsGlobalObjects Type
 hi link javaScriptIdentifier Statement
