@@ -16,7 +16,7 @@ let colors_name="leya"
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#93a1a1 guibg=NONE gui=NONE ctermfg=244 ctermbg=NONE cterm=NONE
+hi Comment guifg=#8c9999 guibg=NONE gui=NONE ctermfg=244 ctermbg=NONE cterm=NONE
 hi Constant guifg=#528323 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -155,7 +155,7 @@ hi link htmlTagN Normal
 hi link htmlTagName Normal
 hi link htmlSpecialTagName Normal
 hi link htmlEndTag Normal
-hi htmlLink guifg=NONE guibg=#e3fbc1 gui=NONE ctermfg=NONE ctermbg=156 cterm=NONE
+hi htmlLink guifg=#0000ff guibg=NONE gui=NONE ctermfg=21 ctermbg=NONE cterm=none
 
 " Todo
 hi link TodoItemAdditionalText Normal
