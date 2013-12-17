@@ -90,7 +90,7 @@ hi link StorageClass Keyword
 hi link StringSpecial Special
 
 " PHP
-hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=63 ctermbg=NONE cterm=NONE
+hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
 hi link phpBrackets Normal
 hi link phpClasses Type
 hi link phpComparison Normal
