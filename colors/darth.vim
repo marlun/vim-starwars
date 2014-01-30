@@ -127,6 +127,10 @@ hi link cssIdentifier Normal
 hi link cssTagName Normal
 hi link cssVendor Statement
 
+" Sass
+hi link sassClass Type
+hi link sassClassChar Type
+
 " Python
 hi link pythonEscape StringSpecial
 hi link pythonValues Type

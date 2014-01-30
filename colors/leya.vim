@@ -19,7 +19,7 @@ hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi Comment guifg=#8c9999 guibg=NONE gui=NONE ctermfg=244 ctermbg=NONE cterm=NONE
 hi Constant guifg=#528323 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
-hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=16 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Number guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
@@ -28,9 +28,6 @@ hi Statement guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NON
 hi Todo guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Type guifg=#2aa198 guibg=NONE gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline term=underline
-
-" hi Special guifg=#b58900 guibg=NONE gui=NONE ctermfg=136 ctermbg=NONE cterm=NONE
-" hi Ignore guifg=#93a1a1 guibg=NONE gui=NONE ctermfg=241 ctermbg=NONE cterm=NONE
 
 " UI
 hi ColorColumn guifg=NONE guibg=#FBEECB gui=NONE ctermfg=NONE ctermbg=lightred cterm=NONE
@@ -73,7 +70,7 @@ hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE 
 hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
 hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
-hi Title guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=darkcyan ctermbg=NONE gui=NONE
+hi Title guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
 
 " GIT
@@ -125,11 +122,15 @@ hi link jsFunction Statement
 hi link javaScriptSpecial StringSpecial
 hi link jsGlobalObjects Type
 hi link javaScriptIdentifier Statement
+hi link jsRegexpOr Constant
 
 " CSS
 hi link cssClassName Normal
 hi link cssIdentifier Normal
 hi link cssTagName Normal
+hi link cssColor Number
+hi link cssTextAttr Number
+hi link cssBackgroundAttr Number
 
 " CoffeeScript
 hi link coffeeAssignSymbols Normal
@@ -166,6 +167,7 @@ hi link TodoTitle Statement
 " Markdown
 hi markdownH2 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
 hi markdownH1 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
+hi link markdownItalic Normal
 
 " Jinja
 hi link JinjaTagBlock Normal
