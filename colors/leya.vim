@@ -73,6 +73,11 @@ hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NO
 hi Title guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
 
+" Mail
+hi mailQuoted1 guifg=#528323 guibg=NONE gui=NONE ctermfg=57 ctermbg=NONE cterm=NONE
+hi mailQuoted2 guifg=#268bd2 guibg=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
+hi mailQuoted3 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+
 " GIT
 hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
@@ -175,4 +180,3 @@ hi link JinjaVarBlock Normal
 
 " Plugins
 hi link ExtraWhitespace Error
-
