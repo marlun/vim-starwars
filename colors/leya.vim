@@ -37,7 +37,7 @@ hi CursorLine guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=187 cterm=N
 hi Directory guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
 hi ErrorMsg guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=160 cterm=NONE
 hi FoldColumn guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=16 ctermbg=144 cterm=NONE
-hi Folded guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=16 ctermbg=144 cterm=NONE
+hi Folded guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=130 ctermbg=229 cterm=NONE
 hi IncSearch guifg=#EEC900 guibg=#262626 gui=NONE ctermfg=220 ctermbg=16 cterm=NONE
 hi Normal guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=16 ctermbg=230 cterm=NONE
 hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
