@@ -56,8 +56,8 @@ hi MatchParen guifg=#FFFFB6 guibg=NONE gui=bold ctermfg=yellow ctermbg=NONE cter
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi NonText guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
-hi Pmenu guifg=#111111 guibg=#999999 gui=NONE ctermfg=16 ctermbg=darkgray cterm=NONE
-hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=yellow cterm=NONE
+hi Pmenu guifg=#111111 guibg=#999999 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
+hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=gray ctermbg=gray cterm=NONE
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=lightgray ctermbg=NONE cterm=NONE
@@ -166,3 +166,12 @@ hi link jinjaTagBlock Normal
 
 " Smarty
 hi link smartyTagName Normal
+
+" VimWiki
+hi link VimwikiHeader1 Constant
+hi link VimwikiHeader2 Type
+hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
+hi link VimwikiItalic Special
+hi link VimwikiBold Type
+hi link VimwikiLink Keyword
+hi link VimwikiLinkRest Special
