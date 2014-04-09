@@ -161,7 +161,7 @@ hi link htmlTagN Normal
 hi link htmlTagName Normal
 hi link htmlSpecialTagName Normal
 hi link htmlEndTag Normal
-hi htmlLink guifg=#0000ff guibg=NONE gui=NONE ctermfg=21 ctermbg=NONE cterm=none
+hi htmlLink cterm=underline
 
 " Todo
 hi link TodoItemAdditionalText Normal
