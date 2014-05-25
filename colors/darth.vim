@@ -15,12 +15,12 @@ endif
 let colors_name="darth"
 
 " Default colors
-hi Normal guifg=#BCBCBC guibg=black gui=NONE ctermfg=gray ctermbg=NONE cterm=NONE
+hi Normal guifg=#999999 guibg=black gui=NONE ctermfg=251 ctermbg=NONE cterm=NONE
 
 " Top groups
 hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi Constant guifg=#99CC99 guibg=NONE gui=NONE ctermfg=green ctermbg=NONE cterm=NONE
-hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=gray ctermbg=NONE cterm=NONE
+hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Statement guifg=#A5D6FB guibg=NONE gui=NONE ctermfg=darkblue ctermbg=NONE cterm=NONE
 hi PreProc guifg=#A5D6FB guibg=NONE gui=NONE ctermfg=darkblue ctermbg=NONE cterm=NONE
 hi Type guifg=#C6C5FE guibg=NONE gui=NONE ctermfg=darkcyan ctermbg=NONE cterm=NONE
