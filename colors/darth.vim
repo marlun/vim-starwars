@@ -15,7 +15,7 @@ endif
 let colors_name="darth"
 
 " Default colors
-hi Normal guifg=#999999 guibg=black gui=NONE ctermfg=251 ctermbg=NONE cterm=NONE
+hi Normal guifg=#999999 guibg=black gui=NONE ctermfg=253 ctermbg=NONE cterm=NONE
 
 " Top groups
 hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
