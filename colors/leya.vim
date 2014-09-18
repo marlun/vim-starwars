@@ -50,10 +50,10 @@ hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=255 ctermbg=33 cterm=
 hi Visual guifg=NONE guibg=#ded9c7 gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 
-hi DiffAdd guifg=#000000 guibg=#99FF99 gui=NONE ctermfg=black ctermbg=darkgreen cterm=NONE
-hi DiffChange guifg=#000000 guibg=#99FF99 gui=NONE ctermfg=black ctermbg=darkgreen cterm=NONE
-hi DiffDelete guifg=#000000 guibg=#FF8888 gui=NONE ctermfg=black ctermbg=196 cterm=NONE
-hi DiffText guifg=#000000 guibg=#08b100 gui=NONE ctermfg=black ctermbg=green cterm=NONE
+hi DiffAdd guifg=#99FF99 guibg=NONE gui=NONE ctermfg=22 ctermbg=83 cterm=NONE
+hi DiffChange guifg=#99FF99 guibg=NONE gui=NONE ctermfg=22 ctermbg=83 cterm=NONE
+hi DiffText guifg=#99FF99 guibg=NONE gui=NONE ctermfg=22 ctermbg=192 cterm=NONE
+hi DiffDelete guifg=#FF8888 guibg=NONE gui=NONE ctermfg=196 ctermbg=209 cterm=NONE
 hi VertSplit guifg=#eee8d5 guibg=#eee8d5 gui=NONE ctermfg=252 ctermbg=252 cterm=NONE
 hi SignColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi LineNr guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
