@@ -74,7 +74,7 @@ hi TabLineFill guifg=#555555 guibg=#AAAAAA gui=NONE ctermfg=NONE ctermbg=NONE ct
 hi TabLineSel guifg=#111111 guibg=#DDDDDD gui=bold ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Title guifg=#C6C5FE guibg=NONE gui=NONE ctermfg=darkcyan guibg=NONE gui=NONE
 hi Visual guifg=#555555 guibg=#EEEEEE gui=NONE ctermfg=lightgray guibg=darkgray gui=NONE
-hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=232 ctermbg=red cterm=NONE
+hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=214 cterm=NONE
 hi WildMenu guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=yellow ctermbg=NONE cterm=NONE
 
 " Statusline
@@ -171,8 +171,10 @@ hi link smartyTagName Normal
 " VimWiki
 hi link VimwikiHeader1 Constant
 hi link VimwikiHeader2 Type
+hi link VimwikiHeader3 Number
 hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
 hi link VimwikiItalic Special
 hi link VimwikiBold Type
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
+hi link VimwikiCode Constant
