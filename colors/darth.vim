@@ -109,6 +109,7 @@ hi link javaScriptNull Type
 hi link javaScriptExceptions Type
 hi link javaScriptSpecial StringSpecial
 hi link javaScriptLabel StringSpecial
+hi link javaScriptGlobal Normal
 
 " COFFEE
 "hi link coffeeDotAccess Normal
