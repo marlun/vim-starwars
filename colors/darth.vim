@@ -61,7 +61,7 @@ hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NO
 hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=gray ctermbg=gray cterm=NONE
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=lightgray ctermbg=NONE cterm=NONE
-hi Search guifg=#262626 guibg=#FFFFB6 gui=NONE ctermfg=16 ctermbg=214 cterm=NONE
+hi Search guifg=#262626 guibg=#FFFFB6 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi SpecialKey guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
@@ -99,7 +99,7 @@ hi link phpFunctions Type
 hi link phpInclude phpFunctions
 hi link phpSpecialFunction Type
 hi link PhpLocalVarCheckError Comment
-hi phpClasses guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=36 ctermbg=NONE cterm=NONE
+hi link phpClasses Type
 
 " JavaScript
 hi link javaScriptFunction Statement
