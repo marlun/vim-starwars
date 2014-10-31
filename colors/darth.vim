@@ -175,7 +175,7 @@ hi link VimwikiHeader2 Type
 hi link VimwikiHeader3 Number
 hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
 hi link VimwikiItalic Special
-hi link VimwikiBold Type
+hi link VimwikiBold Todo
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
-hi link VimwikiCode Constant
+hi link VimwikiCode Special
