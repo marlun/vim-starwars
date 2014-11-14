@@ -162,7 +162,7 @@ hi link htmlTagN Normal
 hi link htmlTagName Normal
 hi link htmlSpecialTagName Normal
 hi link htmlEndTag Normal
-hi htmlLink cterm=underline
+hi link htmlLink Keyword
 
 " Todo
 hi link TodoItemAdditionalText Normal
