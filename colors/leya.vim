@@ -16,7 +16,7 @@ let colors_name="leya"
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#8c9999 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Comment guifg=#8c9999 guibg=NONE gui=NONE ctermfg=243 ctermbg=NONE cterm=NONE
 hi Constant guifg=#528323 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=16 ctermbg=NONE cterm=NONE
@@ -65,6 +65,7 @@ hi Pmenu guifg=#111111 guibg=#cccccc gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=darkgray ctermbg=darkgray cterm=NONE
+
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=black ctermbg=NONE cterm=NONE
 hi SpecialKey guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE cterm=NONE
@@ -114,6 +115,7 @@ hi link phpInclude phpFunctions
 hi link phpDefine Statement
 hi link phpLocalVarCheckError Comment
 hi link phpBackslashSequences Special
+hi link phpTodo Special
 
 " JavaScript
 hi link javaScriptFunction Statement
