@@ -95,6 +95,7 @@ hi link StringSpecial Special
 
 " PHP
 hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+hi phpTodo guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=underline
 hi link phpBrackets Normal
 hi link phpClasses Type
 hi link phpComparison Normal
@@ -115,7 +116,6 @@ hi link phpInclude phpFunctions
 hi link phpDefine Statement
 hi link phpLocalVarCheckError Comment
 hi link phpBackslashSequences Special
-hi phpTodo guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=underline
 
 " JavaScript
 hi link javaScriptFunction Statement
@@ -150,8 +150,9 @@ hi link pythonValues Type
 
 " Vim
 hi link vimGroupName Type
-hi link vimFuncName Type
 hi link vimParenSep Normal
+hi vimFuncName guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+hi link vimOption Type
 
 " Help
 hi link helpHyperTextJump Statement
