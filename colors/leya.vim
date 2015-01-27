@@ -190,6 +190,6 @@ hi VimwikiHeader1 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cter
 hi link VimwikiHeader2 Type
 hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
 hi link VimwikiItalic Special
-hi link VimwikiBold Type
+hi VimwikiBold guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
