@@ -28,7 +28,7 @@ hi Special guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=yellow ctermbg=NONE cterm=N
 hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=white ctermbg=darkred cterm=NONE
-hi Todos guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=214 ctermbg=NONE cterm=NONE
+hi Todo guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=220 ctermbg=NONE cterm=NONE
 
 " Sub groups
 hi Boolean guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=magenta ctermbg=NONE cterm=NONE
