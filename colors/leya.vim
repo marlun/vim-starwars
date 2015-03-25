@@ -193,3 +193,7 @@ hi link VimwikiItalic Special
 hi VimwikiBold guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
+
+" Makefiles
+hi link makeTarget Type
+hi link makeCommands Normal
