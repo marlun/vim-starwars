@@ -16,7 +16,7 @@ let colors_name="leya"
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#8c9999 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Comment guifg=#A95C21 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Constant guifg=#528323 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
@@ -55,9 +55,9 @@ hi DiffChange guifg=#99FF99 guibg=NONE gui=NONE ctermfg=22 ctermbg=83 cterm=NONE
 hi DiffText guifg=#99FF99 guibg=NONE gui=NONE ctermfg=22 ctermbg=192 cterm=NONE
 hi DiffDelete guifg=#FF8888 guibg=NONE gui=NONE ctermfg=196 ctermbg=209 cterm=NONE
 hi VertSplit guifg=#eee8d5 guibg=#eee8d5 gui=NONE ctermfg=252 ctermbg=252 cterm=NONE
-hi SignColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
+hi SignColumn guifg=#222222 guibg=#d6d2c2 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi LineNr guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
-hi MatchParen guifg=#262626 guibg=#EEC900 gui=bold ctermfg=darkyellow ctermbg=NONE cterm=bold
+hi MatchParen guifg=#cb4b16 guibg=NONE gui=bold ctermfg=darkyellow ctermbg=NONE cterm=bold
 hi ModeMsg guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=16 ctermbg=230 cterm=NONE
 hi MoreMsg guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=16 ctermbg=230 cterm=NONE
 hi NonText guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
