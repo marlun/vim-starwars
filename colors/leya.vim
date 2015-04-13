@@ -116,6 +116,7 @@ hi link phpInclude phpFunctions
 hi link phpDefine Statement
 hi link phpLocalVarCheckError Comment
 hi link phpBackslashSequences Special
+hi link Delimiter phpFunctions
 
 " JavaScript
 hi link javaScriptFunction Statement
