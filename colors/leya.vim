@@ -184,6 +184,7 @@ hi link JinjaVarBlock Normal
 
 " Plugins
 highlight ExtraWhitespace ctermbg=red guibg=#ff0000
+highlight NifflerCursorLine ctermbg=57 guibg=#FFFFAF
 
 " VimWiki
 hi VimwikiHeader1 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
