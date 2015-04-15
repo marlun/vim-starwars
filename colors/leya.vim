@@ -22,7 +22,7 @@ hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Number guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi PreProc guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi PreProc guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Statement guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
 hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=underline
@@ -75,6 +75,10 @@ hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NO
 hi Title guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
 
+"
+" Specific highlighting of filetypes and plugins
+"
+
 " Mail
 hi mailQuoted1 guifg=#528323 guibg=NONE gui=NONE ctermfg=57 ctermbg=NONE cterm=NONE
 hi mailQuoted2 guifg=#268bd2 guibg=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
@@ -92,6 +96,10 @@ hi link User1 Error
 " Sub groups
 hi link StorageClass Keyword
 hi link StringSpecial Special
+
+" C
+hi link cInclude PreProc
+hi link cDefine PreProc
 
 " PHP
 hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
@@ -184,8 +192,8 @@ hi link JinjaTagBlock Normal
 hi link JinjaVarBlock Normal
 
 " Plugins
-highlight ExtraWhitespace ctermbg=red guibg=#ff0000
-highlight NifflerCursorLine ctermbg=57 guibg=#FFFFAF
+highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
+highlight NifflerCursorLine guifg=#000000 guibg=#EEC900 ctermfg=16 ctermbg=220
 
 " VimWiki
 hi VimwikiHeader1 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
