@@ -17,7 +17,7 @@ let colors_name="leya"
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi Comment guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi Constant guifg=#528323 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
+hi Constant guifg=#048700 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
@@ -98,8 +98,8 @@ hi link StorageClass Keyword
 hi link StringSpecial Special
 
 " C
-hi link cInclude PreProc
-hi link cDefine PreProc
+hi link cInclude Keyword
+hi link cDefine Keyword
 
 " PHP
 hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
@@ -193,7 +193,7 @@ hi link JinjaVarBlock Normal
 
 " Plugins
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
-highlight NifflerCursorLine guifg=#000000 guibg=#EEC900 ctermfg=16 ctermbg=220
+highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
 
 " VimWiki
 hi VimwikiHeader1 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE

@@ -15,7 +15,7 @@ endif
 let colors_name="darth"
 
 " Default colors
-hi Normal guifg=#999999 guibg=black gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
+hi Normal guifg=#CCCCCC guibg=black gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
 
 " Top groups
 hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
@@ -52,7 +52,7 @@ hi FoldColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=darkgray c
 hi SignColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi IncSearch guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=222 cterm=NONE
 hi LineNr guifg=#333333 guibg=#BBBBBB gui=NONE ctermfg=243 ctermbg=234 cterm=NONE
-hi MatchParen guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=220 ctermbg=16 cterm=NONE
+hi MatchParen guifg=#cb4b16 guibg=#FFFFAF gui=NONE ctermfg=220 ctermbg=16 cterm=NONE
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi NonText guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
@@ -180,3 +180,7 @@ hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
 hi link VimwikiCode WarningMsg
 hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=167 ctermbg=none cterm=NONE
+
+" Plugins
+highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
+highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
