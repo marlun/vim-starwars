@@ -14,15 +14,18 @@ endif
 
 let colors_name="leya"
 
+" The standard highlighting
+hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=yellow cterm=bold
+
 " Code syntax groups (:h group-name)
-hi Boolean guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Boolean guifg=#D432CC guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
+hi Comment guifg=#979997 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Constant guifg=#048700 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
-hi Number guifg=#D375D0 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi PreProc guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Number guifg=#D432CC guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
+hi PreProc guifg=#5F5FD7 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Statement guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
 hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=underline
@@ -40,7 +43,6 @@ hi ErrorMsg guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=160 cterm=N
 hi FoldColumn guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=16 ctermbg=144 cterm=NONE
 hi Folded guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=130 ctermbg=229 cterm=NONE
 hi IncSearch guifg=#EEC900 guibg=#262626 gui=NONE ctermfg=220 ctermbg=16 cterm=NONE
-hi Normal guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=235 ctermbg=yellow cterm=bold
 hi Search guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=255 ctermbg=33 cterm=NONE
 hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=236 ctermbg=252 cterm=NONE
@@ -98,8 +100,10 @@ hi link StorageClass Keyword
 hi link StringSpecial Special
 
 " C
-hi link cInclude Keyword
-hi link cDefine Keyword
+hi link cInclude PreProc
+hi link cFormat Number
+hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
+" hi link cPreCondit Keyword
 
 " PHP
 hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
@@ -193,16 +197,19 @@ hi link JinjaVarBlock Normal
 
 " Plugins
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
-highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
+highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
 
 " VimWiki
-hi VimwikiHeader1 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
-hi link VimwikiHeader2 Type
 hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
-hi link VimwikiItalic Special
-hi VimwikiBold guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+hi VimwikiBold guifg=NONE guibg=NONE gui=bold ctermfg=62 ctermbg=NONE cterm=NONE
+hi VimwikiItalic guifg=#6c71c4 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=NONE
+hi link VimwikiItalic PreProc
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
+hi link VimwikiCode Special
+hi link VimwikiHeader1 VimwikiBold
+hi link VimwikiHeader2 Constant
+hi link VimwikiHeader3 Type
 
 " Makefiles
 hi link makeTarget Type
