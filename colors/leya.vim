@@ -25,9 +25,9 @@ hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Number guifg=#D432CC guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi PreProc guifg=#5F5FD7 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi Statement guifg=#268bd2 guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
+hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
 hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=underline
 hi Type guifg=#2aa198 guibg=NONE gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline term=underline
@@ -106,7 +106,8 @@ hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
 " hi link cPreCondit Keyword
 
 " PHP
-hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+" hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+hi link phpFunctions PreProc
 hi phpTodo guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=underline
 hi link phpBrackets Normal
 hi link phpClasses Type
@@ -123,12 +124,10 @@ hi link phpSpecialFunction phpFunctions
 hi link phpStorageClass Statement
 hi link phpStructure Statement
 hi link phpVarSelector Normal
-hi link phpFunctions Type
 hi link phpInclude phpFunctions
 hi link phpDefine Statement
 hi link phpLocalVarCheckError Comment
 hi link phpBackslashSequences Special
-hi link Delimiter phpFunctions
 
 " JavaScript
 hi link javaScriptFunction Statement
@@ -200,16 +199,15 @@ highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
 highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
 
 " VimWiki
-hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
+hi VimwikiHeader1 guifg=NONE guibg=NONE gui=bold ctermfg=62 ctermbg=NONE cterm=bold
+hi VimwikiHeader2 guifg=#048700 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
+hi VimwikiHeader3 guifg=#5F5FD7 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi VimwikiBold guifg=NONE guibg=NONE gui=bold ctermfg=62 ctermbg=NONE cterm=NONE
 hi VimwikiItalic guifg=#6c71c4 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=NONE
-hi link VimwikiItalic PreProc
+hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
 hi link VimwikiCode Special
-hi link VimwikiHeader1 VimwikiBold
-hi link VimwikiHeader2 Constant
-hi link VimwikiHeader3 Type
 
 " Makefiles
 hi link makeTarget Type
