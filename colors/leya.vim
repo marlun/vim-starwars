@@ -100,10 +100,11 @@ hi link StorageClass Keyword
 hi link StringSpecial Special
 
 " C
-hi link cInclude PreProc
+hi link cInclude Special
+hi link cDefine Special
+hi link cPreCondit Keyword
 hi link cFormat Number
 hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
-" hi link cPreCondit Keyword
 
 " PHP
 " hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
