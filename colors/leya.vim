@@ -62,14 +62,14 @@ hi LineNr guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=NONE ctermbg=254 cterm=NONE
 hi MatchParen guifg=#cb4b16 guibg=NONE gui=bold ctermfg=darkyellow ctermbg=NONE cterm=bold
 hi ModeMsg guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=16 ctermbg=230 cterm=NONE
 hi MoreMsg guifg=#444444 guibg=#fdf6e3 gui=NONE ctermfg=16 ctermbg=230 cterm=NONE
-hi NonText guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
+hi NonText guifg=#979997 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi Pmenu guifg=#111111 guibg=#cccccc gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
 hi PmenuSel guifg=#000000 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=darkgray ctermbg=darkgray cterm=NONE
 
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=black ctermbg=NONE cterm=NONE
-hi SpecialKey guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
+hi SpecialKey guifg=#979997 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
