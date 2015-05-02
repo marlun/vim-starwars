@@ -164,7 +164,7 @@ hi link pythonValues Type
 " Vim
 hi link vimGroupName Type
 hi link vimParenSep Normal
-hi vimFuncName guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+hi link vimFuncName PreProc
 hi link vimOption Type
 
 " Help
