@@ -1,15 +1,11 @@
-" vim: set expandtab:
-"
-" Vim color file
-"
-" A light theme.
+" A light vim colorscheme named leya.
 "
 " Author: Martin Lundberg
 "
 set background=light
 hi clear
 if exists("syntax_on")
-    syntax reset
+	syntax reset
 endif
 
 let colors_name="leya"
@@ -19,12 +15,13 @@ hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=yellow cterm=
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#D432CC guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#979997 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Comment guifg=#048700 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Constant guifg=#048700 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Number guifg=#D432CC guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
+" hi Number guifg=#DC143C guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
@@ -103,7 +100,6 @@ hi link StringSpecial Special
 hi link cInclude Special
 hi link cDefine Special
 hi link cPreCondit Keyword
-hi link cFormat Number
 hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
 
 " PHP
@@ -163,9 +159,17 @@ hi link pythonValues Type
 
 " Vim
 hi link vimGroupName Type
+hi link vimFgBgAttrib Special
+hi link vimHiAttrib Special
+hi link vimHiGui Keyword
+hi link vimHiGuiFgBg Keyword
+hi link vimHiGuiRgb Special
+hi link vimHiCtermFgBg Keyword
+hi link vimHiCterm Keyword
 hi link vimParenSep Normal
 hi link vimFuncName PreProc
 hi link vimOption Type
+hi vimCommentTitle guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
 
 " Help
 hi link helpHyperTextJump Statement
