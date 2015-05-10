@@ -100,6 +100,7 @@ hi link StringSpecial Special
 hi link cInclude Special
 hi link cDefine Special
 hi link cPreCondit Keyword
+hi cConstant guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=yellow cterm=bold
 hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
 
 " PHP
