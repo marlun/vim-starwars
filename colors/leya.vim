@@ -104,9 +104,8 @@ hi cConstant guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=yellow cte
 hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
 
 " PHP
-" hi phpFunctions guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
 hi link phpFunctions PreProc
-hi phpTodo guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=underline
+hi phpTodo guifg=#cb4b16 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=underline
 hi link phpBrackets Normal
 hi link phpClasses Type
 hi link phpComparison Normal
