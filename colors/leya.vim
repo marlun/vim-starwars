@@ -11,7 +11,7 @@ endif
 let colors_name="leya"
 
 " The standard highlighting
-hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=yellow cterm=bold
+hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=NONE cterm=NONE
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
@@ -20,8 +20,7 @@ hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NON
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
-hi Number guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-" hi Number guifg=#DC143C guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
+hi Number guifg=#ff00ff guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
@@ -102,6 +101,7 @@ hi link cDefine Special
 hi link cPreCondit Keyword
 hi cConstant guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=yellow cterm=bold
 hi cFormat guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
+hi cSpecialCharacter guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=NONE
 
 " PHP
 hi link phpFunctions PreProc
