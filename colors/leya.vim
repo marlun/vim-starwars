@@ -20,7 +20,7 @@ hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NON
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
-hi Number guifg=#ff00ff guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
+hi Number guifg=#C71585 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
@@ -105,7 +105,7 @@ hi cSpecialCharacter guifg=#048700 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE 
 
 " PHP
 hi link phpFunctions PreProc
-hi phpTodo guifg=#cb4b16 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=underline
+hi phpTodo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=underline
 hi link phpBrackets Normal
 hi link phpClasses Type
 hi link phpComparison Normal
