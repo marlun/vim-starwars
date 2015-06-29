@@ -217,3 +217,10 @@ hi link VimwikiCode Special
 " Makefiles
 hi link makeTarget Type
 hi link makeCommands Normal
+
+" vim-notes
+hi link notesDoneItem Normal
+hi notesTodo guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
+hi notesDoneMarker guifg=#009900 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=bold
+hi notesFixMe guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
+hi notesInProgress guifg=none guibg=none gui=bold ctermfg=none ctermbg=none cterm=bold
