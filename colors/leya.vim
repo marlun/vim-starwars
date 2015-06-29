@@ -220,6 +220,10 @@ hi link makeCommands Normal
 
 " vim-notes
 hi link notesDoneItem Normal
+hi link notesShortHeading Type
+hi link notesAtxHeading Type
+hi link notesAtxMarker Type
+hi notesTitle guifg=#2aa198 guibg=NONE gui=bold ctermfg=30 ctermbg=NONE cterm=bold
 hi notesTodo guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
 hi notesDoneMarker guifg=#009900 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=bold
 hi notesFixMe guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
