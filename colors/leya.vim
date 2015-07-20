@@ -11,7 +11,7 @@ endif
 let colors_name="leya"
 
 " The standard highlighting
-hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=NONE cterm=NONE
+hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=white cterm=NONE
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
