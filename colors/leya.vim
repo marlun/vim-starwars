@@ -203,15 +203,12 @@ highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
 highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
 
 " VimWiki
-hi VimwikiHeader1 guifg=NONE guibg=NONE gui=bold ctermfg=62 ctermbg=NONE cterm=bold
-hi VimwikiHeader2 guifg=#048700 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
-hi VimwikiHeader3 guifg=#5F5FD7 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi VimwikiBold guifg=NONE guibg=NONE gui=bold ctermfg=62 ctermbg=NONE cterm=NONE
-hi VimwikiItalic guifg=#6c71c4 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=NONE
-hi VimwikiDelText guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=none cterm=NONE
-hi link VimwikiLink Keyword
-hi link VimwikiLinkRest Special
-hi link VimwikiCode Special
+hi VimwikiHeader1 guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+hi VimwikiHeader2 guifg=NONE guibg=NONE gui=bold ctermfg=30 ctermbg=NONE cterm=bold
+hi VimwikiHeader3 guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+hi VimwikiLink guifg=NONE guibg=NONE gui=bold ctermfg=27 ctermbg=NONE cterm=none
+hi VimwikiBold guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+hi VimwikiItalic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
 
 " Makefiles
 hi link makeTarget Type
