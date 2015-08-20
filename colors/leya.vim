@@ -15,7 +15,7 @@ hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=white cterm=N
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=28 ctermbg=NONE cterm=italic
+hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=28 ctermbg=NONE cterm=NONE
 hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
@@ -74,13 +74,17 @@ hi Title guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
 
 "
-" Specific highlighting of filetypes and plugins
+" Specific highlighting of filetypes
 "
 
 " Mail
 hi mailQuoted1 guifg=#528323 guibg=NONE gui=NONE ctermfg=57 ctermbg=NONE cterm=NONE
 hi mailQuoted2 guifg=#268bd2 guibg=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
 hi mailQuoted3 guifg=#6c71c4 guibg=NONE gui=NONE ctermfg=62 ctermbg=NONE cterm=NONE
+
+"
+" Specific highlighting of plug-ins
+"
 
 " GIT
 hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
