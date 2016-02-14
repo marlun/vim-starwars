@@ -84,6 +84,15 @@ hi link User1 Error
 hi link StorageClass Keyword
 hi link StringSpecial Special
 
+" Diff
+hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
+hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
+
+" Vim
+hi link vimGroupName Type
+hi link vimFuncName Type
+hi link vimParenSep Normal
+
 " PHP
 hi link phpBackslashSequences Number
 hi link phpComparison Normal
@@ -111,39 +120,15 @@ hi link javaScriptSpecial StringSpecial
 hi link javaScriptLabel StringSpecial
 hi link javaScriptGlobal Normal
 
-" COFFEE
-"hi link coffeeDotAccess Normal
-"hi link coffeeAssignOp Normal
-"hi link coffeeExtendedOp Normal
-hi link coffeeObjAssign Special
-hi link coffeeConstant Normal
-hi link coffeeParen Normal
-hi link coffeeBracket Normal
-hi link coffeeKeyword Keyword
-hi link coffeeInterpDelim Special
-hi coffeeSpecialVar guifg=#DDDDDD guibg=NONE
-
 " CSS
 hi link cssClassName Normal
 hi link cssIdentifier Normal
 hi link cssTagName Normal
 hi link cssVendor Statement
 
-" Sass
-hi link sassClass Type
-hi link sassClassChar Type
-
 " Python
 hi link pythonEscape StringSpecial
 hi link pythonValues Type
-
-" Vim
-hi link vimGroupName Type
-hi link vimFuncName Type
-hi link vimParenSep Normal
-
-" Help
-hi link helpHyperTextJump Statement
 
 " HTML
 hi link htmlEndTag Normal
@@ -153,21 +138,24 @@ hi link javaScript Normal
 hi link htmlSpecialTagName Normal
 hi link htmlTagName Normal
 
-" Todo
-hi link TodoItemAdditionalText Normal
-hi link TodoItemDone Comment
-hi link TodoItem Constant
-hi link TodoTitle Statement
-
-" Diff
-hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
-hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
-
-" Jinja
-hi link jinjaTagBlock Normal
+" Sass
+hi link sassClass Type
+hi link sassClassChar Type
 
 " Smarty
 hi link smartyTagName Normal
+
+" Markdown
+hi link markdownH1 Keyword
+hi link markdownH2 Type
+hi link markdownH3 Constant
+
+"
+" Plugins
+"
+
+highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
+highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
 
 " VimWiki
 hi link VimwikiHeader1 Constant
@@ -180,7 +168,3 @@ hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
 hi link VimwikiCode WarningMsg
 hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=167 ctermbg=none cterm=NONE
-
-" Plugins
-highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
-highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
