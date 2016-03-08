@@ -114,6 +114,7 @@ hi link phpClasses Type
 hi link javaScriptFunction Statement
 hi link javaScriptNumber Number
 hi link javaScriptIdentifier Statement
+hi link javaScriptVariable Statement
 hi link javaScriptNull Type
 hi link javaScriptExceptions Type
 hi link javaScriptSpecial StringSpecial
