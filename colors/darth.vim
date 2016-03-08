@@ -84,6 +84,11 @@ hi link User1 Error
 hi link StorageClass Keyword
 hi link StringSpecial Special
 
+" Markdown
+hi link markdownH1 Title
+hi link markdownH2 Constant
+hi link markdownH3 Statement
+
 " PHP
 hi link phpBackslashSequences Number
 hi link phpComparison Normal
@@ -110,6 +115,8 @@ hi link javaScriptExceptions Type
 hi link javaScriptSpecial StringSpecial
 hi link javaScriptLabel StringSpecial
 hi link javaScriptGlobal Normal
+hi link jsOperator Normal
+hi link jsClass Keyword
 
 " COFFEE
 "hi link coffeeDotAccess Normal
@@ -178,8 +185,8 @@ hi link VimwikiItalic Special
 hi link VimwikiBold Todo
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
-hi link VimwikiCode WarningMsg
-hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=167 ctermbg=none cterm=NONE
+hi link VimwikiCode Special
+hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=37 ctermbg=none cterm=NONE
 
 " Plugins
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
