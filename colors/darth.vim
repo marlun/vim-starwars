@@ -120,6 +120,8 @@ hi link javaScriptExceptions Type
 hi link javaScriptSpecial StringSpecial
 hi link javaScriptLabel StringSpecial
 hi link javaScriptGlobal Normal
+hi link jsOperator Normal
+hi link jsClass Keyword
 
 " CSS
 hi link cssClassName Normal
@@ -167,5 +169,7 @@ hi link VimwikiItalic Special
 hi link VimwikiBold Todo
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
-hi link VimwikiCode WarningMsg
-hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=167 ctermbg=none cterm=NONE
+hi link VimwikiCode Special
+hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=37 ctermbg=none cterm=NONE
+" hi link VimwikiCode WarningMsg
+" hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=167 ctermbg=none cterm=NONE
