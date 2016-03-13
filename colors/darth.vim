@@ -110,7 +110,7 @@ hi link phpSpecialFunction Type
 hi link PhpLocalVarCheckError Comment
 hi link phpClasses Type
 
-" JavaScript
+" JavaScript from default
 hi link javaScriptFunction Statement
 hi link javaScriptNumber Number
 hi link javaScriptIdentifier Statement
@@ -120,8 +120,23 @@ hi link javaScriptExceptions Type
 hi link javaScriptSpecial StringSpecial
 hi link javaScriptLabel StringSpecial
 hi link javaScriptGlobal Normal
+
+" JavaScript from somwhere?
 hi link jsOperator Normal
 hi link jsClass Keyword
+
+" JavaScript from othree/yajs.vim
+hi link javascriptMethod Type
+hi link javascriptArrayMethod Type
+hi link javascriptObjectStaticMethod Type
+hi link javascriptDOMNodeMethod Type
+hi link javascriptProp Normal
+hi link javascriptBOMWindowProp Special
+hi link javascriptDOMDocProp Special
+hi link javascriptImport Keyword
+hi link javascriptNodeGlobal Special
+hi link javascriptOperator Keyword
+hi link javascriptEndColons Normal
 
 " CSS
 hi link cssClassName Normal
@@ -170,6 +185,7 @@ hi link VimwikiBold Todo
 hi link VimwikiLink Keyword
 hi link VimwikiLinkRest Special
 hi link VimwikiCode Special
-hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=37 ctermbg=none cterm=NONE
+hi link VimwikiPre Special
+" hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=37 ctermbg=none cterm=NONE
 " hi link VimwikiCode WarningMsg
 " hi VimwikiCode guifg=#ffff00 guibg=NONE gui=NONE ctermfg=167 ctermbg=none cterm=NONE
