@@ -131,6 +131,7 @@ hi link javascriptArrayMethod Type
 hi link javascriptObjectStaticMethod Type
 hi link javascriptDOMNodeMethod Type
 hi link javascriptProp Normal
+hi link javascriptArrowFunc Normal
 hi link javascriptBOMWindowProp Special
 hi link javascriptDOMDocProp Special
 hi link javascriptImport Keyword
