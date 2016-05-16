@@ -93,6 +93,9 @@ hi link vimGroupName Type
 hi link vimFuncName Type
 hi link vimParenSep Normal
 
+" Help
+hi link helpHyperTextJump Type
+
 " PHP
 hi link phpBackslashSequences Number
 hi link phpComparison Normal
