@@ -225,7 +225,7 @@ hi link notesDoneItem Normal
 hi link notesShortHeading Type
 hi notesDoneMarker guifg=#009900 guibg=NONE gui=bold ctermfg=130 ctermbg=NONE cterm=bold
 hi notesFixMe guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
-hi notesInProgress guifg=none guibg=none gui=bold ctermfg=none ctermbg=none cterm=bold
+hi notesInProgress guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi notesShortHeading guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=NONE cterm=NONE
 hi notesTitle guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=NONE cterm=NONE
 hi notesTodo guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
