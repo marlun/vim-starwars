@@ -19,19 +19,19 @@ hi Normal guifg=#CCCCCC guibg=black gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
 
 " Syntax groups
 hi Comment ctermfg=darkgray ctermbg=NONE cterm=NONE
-hi Constant ctermfg=71 ctermbg=NONE cterm=NONE
-  hi Number ctermfg=212 ctermbg=NONE cterm=NONE
-  hi Boolean ctermfg=212 ctermbg=NONE cterm=NONE
+hi Constant ctermfg=180 ctermbg=NONE cterm=NONE
+  hi Number ctermfg=175 ctermbg=NONE cterm=NONE
+  hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Function ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Statement ctermfg=75 ctermbg=NONE cterm=NONE
 hi PreProc ctermfg=140 ctermbg=NONE cterm=NONE
-hi Type ctermfg=212 ctermbg=NONE cterm=NONE
+hi Type ctermfg=175 ctermbg=NONE cterm=NONE
 hi Special ctermfg=221 ctermbg=NONE cterm=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
 hi Ignore ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi Error ctermfg=white ctermbg=darkred cterm=NONE
-hi Todo ctermfg=220 ctermbg=NONE cterm=NONE
+hi Todo ctermfg=221 ctermbg=NONE cterm=NONE
 
 " Sub groups
 
@@ -107,17 +107,15 @@ hi link htmlSpecialTagName Normal
 hi link htmlTagName Normal
 
 " JavaScript
-hi link jsArrowFunction Normal
-hi link jsExceptions PreProc
-hi link jsFunction Statement
-hi link jsGlobalNodeObjects PreProc
-hi link jsGlobalObjects PreProc
-hi link jsOperator PreProc
-hi link jsPrototype PreProc
-hi link jsStorageClass Statement
-hi link jsTaggedTemplate PreProc
-hi link jsThis Special
-hi link jsNew Statement
+hi link javaScriptAsyncAwaitKeyword Statement
+hi link javaScriptFunction Statement
+hi link javaScriptGlobal Special
+hi link javaScriptIdentifier Statement
+hi link javaScriptMember Normal
+hi link javaScriptNodeKeyword Statement
+hi link javaScriptNull Number
+hi link javaScriptPlaceholder Special
+hi link EcmaScriptTemplateStrings Statement
 
 " Markdown
 hi link markdownHeadingDelimiter Constant

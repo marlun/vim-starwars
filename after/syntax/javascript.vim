@@ -1,10 +1,11 @@
-syntax clear jsCommentTodo
-syntax keyword jsCommentTodo contained TODO FIXME XXX TBD NOTE
+" syntax clear jsCommentTodo
+" syntax keyword jsCommentTodo contained TODO FIXME XXX TBD NOTE
 
-syntax clear jsOperator
-syntax keyword jsOperator delete instanceof typeof void in of skipwhite skipempty nextgroup=@jsExpression
+" syntax clear jsOperator
+" syntax keyword jsOperator delete instanceof typeof void in of skipwhite skipempty nextgroup=@jsExpression
 
-syntax keyword jsNew new skipwhite skipempty nextgroup=@jsExpression
+syntax keyword javaScriptNodeKeyword require
+syntax keyword javaScriptAsyncAwaitKeyword async await
 
 " syntax clear jsGlobalNodeObjects
 " syntax keyword jsGlobalNodeObjects module exports global process __dirname __filename
