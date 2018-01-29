@@ -15,16 +15,16 @@ hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=white cterm=N
 
 " Code syntax groups (:h group-name)
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=28 ctermbg=NONE cterm=NONE
-hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=italic
+hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=italic
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Number guifg=#C71585 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
+hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
-hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=22 ctermbg=NONE cterm=bold
+hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=bold,italic
 hi Type guifg=#2aa198 guibg=NONE gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline term=underline
 
@@ -40,8 +40,8 @@ hi FoldColumn guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=16 ctermbg=144 cterm=
 hi Folded guifg=#000000 guibg=#d8c8ae gui=NONE ctermfg=130 ctermbg=229 cterm=NONE
 hi IncSearch guifg=#000000 guibg=#EEC900 gui=bold ctermfg=220 ctermbg=16 cterm=NONE
 hi Search guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
-hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=255 ctermbg=33 cterm=NONE
-hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=236 ctermbg=252 cterm=NONE
+hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=232 ctermbg=159 cterm=NONE
+hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=232 ctermbg=194 cterm=NONE
 hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=252 cterm=NONE
 hi TabLineFill guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=252 cterm=NONE
 hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=255 ctermbg=33 cterm=NONE
@@ -143,6 +143,9 @@ hi link javaScriptSpecial StringSpecial
 hi link jsGlobalObjects Type
 hi link javaScriptIdentifier Statement
 hi link jsRegexpOr Constant
+hi link jsGlobalNodeObjects Statement
+hi link jsOperator Normal
+hi link jsThis Normal
 
 " CSS
 hi link cssClassName Normal
@@ -194,8 +197,8 @@ hi link TodoItem Constant
 hi link TodoTitle Statement
 
 " Markdown
-hi markdownH2 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
-hi markdownH1 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
+hi markdownH2 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=none
+hi markdownH1 guifg=#444444 guibg=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=none
 hi link markdownItalic Normal
 
 " Jinja

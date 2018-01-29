@@ -18,8 +18,8 @@ let colors_name="darth"
 hi Normal guifg=#CCCCCC guibg=black gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
 
 " Syntax groups
-hi Comment ctermfg=darkgray ctermbg=NONE cterm=NONE
-hi Constant ctermfg=180 ctermbg=NONE cterm=NONE
+hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
+hi Constant ctermfg=255 ctermbg=NONE cterm=italic
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -51,7 +51,7 @@ hi VertSplit guifg=#666666 guibg=#666666 gui=NONE ctermfg=darkgray ctermbg=darkg
 hi Folded guifg=#000000 guibg=#666666 gui=NONE ctermfg=240 ctermbg=234 cterm=NONE
 hi FoldColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=darkgray cterm=NONE
 hi SignColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=234 cterm=NONE
-hi IncSearch guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=222 cterm=NONE
+hi IncSearch guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=231 cterm=NONE
 hi LineNr guifg=#333333 guibg=#BBBBBB gui=NONE ctermfg=243 ctermbg=234 cterm=NONE
 hi MatchParen guifg=#FFFFAF guibg=NONE gui=NONE ctermfg=220 ctermbg=16 cterm=NONE
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -116,6 +116,8 @@ hi link javaScriptNodeKeyword Statement
 hi link javaScriptNull Number
 hi link javaScriptPlaceholder Special
 hi link EcmaScriptTemplateStrings Statement
+hi link jsStorageClass Statement
+hi link jsTernaryIfOperator Normal
 
 " Markdown
 hi link markdownHeadingDelimiter Constant
