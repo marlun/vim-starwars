@@ -1,11 +1,5 @@
-" vim: set expandtab:
-"
-" Vim color file
-"
-" A dark theme.
-"
+" Dark colorscheme for vim
 " Author: Martin Lundberg
-"
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -14,17 +8,17 @@ endif
 
 let colors_name="darth"
 
-" Default colors
+" Default colors {{{1
 hi Normal guifg=#CCCCCC guibg=black gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
 
-" Syntax groups
+" Syntax groups {{{1
 hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
-hi Constant ctermfg=255 ctermbg=NONE cterm=italic
+hi Constant ctermfg=150 ctermbg=NONE cterm=italic
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Function ctermfg=NONE ctermbg=NONE cterm=NONE
-hi Statement ctermfg=75 ctermbg=NONE cterm=NONE
+hi Statement ctermfg=153 ctermbg=NONE cterm=NONE
 hi PreProc ctermfg=140 ctermbg=NONE cterm=NONE
 hi Type ctermfg=175 ctermbg=NONE cterm=NONE
 hi Special ctermfg=221 ctermbg=NONE cterm=NONE
@@ -35,7 +29,7 @@ hi Todo ctermfg=221 ctermbg=NONE cterm=NONE
 
 " Sub groups
 
-" UI
+" UI {{{1
 hi ColorColumn guifg=NONE guibg=#222222 gui=NONE ctermfg=NONE ctermbg=52 cterm=NONE
 hi Cursor guifg=#555555 guibg=#EEEEEE gui=NONE ctermfg=black ctermbg=white cterm=standout
 hi CursorColumn guifg=NONE guibg=#121212 gui=NONE ctermfg=NONE ctermbg=black cterm=NONE
@@ -78,27 +72,27 @@ hi Visual guifg=#555555 guibg=#EEEEEE gui=NONE ctermfg=lightgray guibg=darkgray 
 hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=214 cterm=NONE
 hi WildMenu guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 
-" Vim
+" Vim {{{1
 hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
 hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
 hi link qfFileName Statement
 
-" Vimscript
+" Vimscript {{{1
 hi link vimGroupName Type
 hi link vimFuncName PreProc
 hi link vimParenSep Normal
 hi link vimHiGuiFgBg Normal
 
-" Help
+" Help {{{1
 hi link helpHyperTextJump Type
 
-" CSS
+" CSS {{{1
 hi link cssClassName Normal
 hi link cssIdentifier Normal
 hi link cssTagName Normal
 hi link cssVendor Statement
 
-" HTML
+" HTML {{{1
 hi link htmlEndTag Normal
 hi link htmlH1 Normal
 hi link htmlItalic Special
@@ -106,7 +100,8 @@ hi link javaScript Normal
 hi link htmlSpecialTagName Normal
 hi link htmlTagName Normal
 
-" JavaScript
+" JavaScript {{{1
+hi link EcmaScriptTemplateStrings Statement
 hi link javaScriptAsyncAwaitKeyword Statement
 hi link javaScriptFunction Statement
 hi link javaScriptGlobal Special
@@ -115,21 +110,37 @@ hi link javaScriptMember Normal
 hi link javaScriptNodeKeyword Statement
 hi link javaScriptNull Number
 hi link javaScriptPlaceholder Special
-hi link EcmaScriptTemplateStrings Statement
+hi link jsFunction Statement
+hi link jsGlobalNodeObjects Special
+hi link jsGlobalObjects Special
+" highlight jsGlobalNodeObjects ctermfg=221 ctermbg=NONE cterm=none
+" highlight jsGlobalObjects ctermfg=221 ctermbg=NONE cterm=none
+" highlight jsThis ctermfg=221 ctermbg=NONE cterm=none
 hi link jsStorageClass Statement
 hi link jsTernaryIfOperator Normal
+hi link jsArrowFunction Normal
+hi link jsOperator Normal
+hi link jsImport Special
+hi link jsFrom Special
+hi link jsThis Special
 
-" Markdown
-hi link markdownHeadingDelimiter Constant
+" Mail {{{1
+hi link mailUrl Statement
+
+" Markdown {{{1
+hi markdownHeadingDelimiter ctermfg=NONE ctermbg=none cterm=none
+" hi markdownH1 ctermfg=150 ctermbg=none cterm=bold,
 hi link markdownH1 Constant
-hi link markdownH2 Constant
-hi link markdownH3 Constant
+hi link markdownH2 Statement
+hi link markdownH3 PreProc
 hi link markdownListMarker Special
+hi link markdownItalic Special
+hi markdownItalic ctermfg=none ctermbg=none cterm=italic
 
-" Netrw
+" Netrw {{{1
 hi link NetrwDir Statement
 
-" PHP
+" PHP {{{1
 hi link phpBackslashSequences Number
 hi link phpComparison Normal
 hi link phpMemberSelector Normal
@@ -146,6 +157,13 @@ hi link phpSpecialFunction Type
 hi link PhpLocalVarCheckError Comment
 hi link phpClasses Type
 
-" Plugins
+" Plugins {{{1
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
 highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
+
+" SH {{{1
+hi link shQuote Constant
+hi link shStatement Normal
+hi link shCommandSub Normal
+
+" vim: fdm=marker
