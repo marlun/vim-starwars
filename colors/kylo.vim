@@ -128,7 +128,7 @@ hi link jsThis Special
 hi link mailUrl Statement
 
 " Markdown {{{1
-hi markdownHeadingDelimiter ctermfg=NONE ctermbg=none cterm=none
+hi link markdownHeadingDelimiter Constant
 " hi markdownH1 ctermfg=150 ctermbg=none cterm=bold,
 hi link markdownH1 Constant
 hi link markdownH2 Statement
