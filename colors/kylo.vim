@@ -8,10 +8,8 @@ endif
 
 let colors_name="darth"
 
-" Default colors {{{1
-hi Normal guifg=#CCCCCC guibg=black gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
-
 " Syntax groups {{{1
+hi Normal ctermfg=250 ctermbg=NONE cterm=NONE
 hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
 hi Constant ctermfg=150 ctermbg=NONE cterm=italic
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
@@ -21,7 +19,7 @@ hi Function ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Statement ctermfg=153 ctermbg=NONE cterm=NONE
 hi PreProc ctermfg=140 ctermbg=NONE cterm=NONE
 hi Type ctermfg=175 ctermbg=NONE cterm=NONE
-hi Special ctermfg=221 ctermbg=NONE cterm=NONE
+hi Special ctermfg=183 ctermbg=NONE cterm=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
 hi Ignore ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi Error ctermfg=white ctermbg=darkred cterm=NONE
@@ -123,16 +121,16 @@ hi link jsOperator Normal
 hi link jsImport Special
 hi link jsFrom Special
 hi link jsThis Special
+hi link jsSuper Special
 
 " Mail {{{1
 hi link mailUrl Statement
 
 " Markdown {{{1
 hi link markdownHeadingDelimiter Constant
-" hi markdownH1 ctermfg=150 ctermbg=none cterm=bold,
 hi link markdownH1 Constant
-hi link markdownH2 Statement
-hi link markdownH3 PreProc
+hi link markdownH2 Constant
+hi link markdownH3 Constant
 hi link markdownListMarker Special
 hi link markdownItalic Special
 hi markdownItalic ctermfg=none ctermbg=none cterm=italic
