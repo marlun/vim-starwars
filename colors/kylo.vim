@@ -6,12 +6,12 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name="darth"
+let colors_name="kylo"
 
 " Syntax groups {{{1
 hi Normal ctermfg=250 ctermbg=NONE cterm=NONE
 hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
-hi Constant ctermfg=150 ctermbg=NONE cterm=italic
+hi Constant ctermfg=150 ctermbg=NONE cterm=NONE
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -71,8 +71,12 @@ hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=214 cterm=
 hi WildMenu guifg=#FFFFB6 guibg=NONE gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 
 " Vim {{{1
-hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
-hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
+hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
+hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=green ctermbg=NONE cterm=NONE
+hi DiffAdd ctermfg=green ctermbg=NONE cterm=NONE
+hi DiffChange ctermfg=green ctermbg=NONE cterm=NONE
+hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=NONE
+hi DiffText ctermfg=16 ctermbg=193 cterm=NONE
 hi link qfFileName Statement
 
 " Vimscript {{{1
@@ -111,6 +115,7 @@ hi link javaScriptPlaceholder Special
 hi link jsFunction Statement
 hi link jsGlobalNodeObjects Special
 hi link jsGlobalObjects Special
+hi link jsOperatorKeyword Special
 " highlight jsGlobalNodeObjects ctermfg=221 ctermbg=NONE cterm=none
 " highlight jsGlobalObjects ctermfg=221 ctermbg=NONE cterm=none
 " highlight jsThis ctermfg=221 ctermbg=NONE cterm=none
@@ -122,6 +127,7 @@ hi link jsImport Special
 hi link jsFrom Special
 hi link jsThis Special
 hi link jsSuper Special
+hi link jsExceptions Special
 
 " Mail {{{1
 hi link mailUrl Statement
@@ -131,6 +137,7 @@ hi link markdownHeadingDelimiter Constant
 hi link markdownH1 Constant
 hi link markdownH2 Constant
 hi link markdownH3 Constant
+hi link markdownH4 Constant
 hi link markdownListMarker Special
 hi link markdownItalic Special
 hi markdownItalic ctermfg=none ctermbg=none cterm=italic
@@ -158,6 +165,9 @@ hi link phpClasses Type
 " Plugins {{{1
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
 highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
+highlight SignifySignAdd cterm=bold ctermbg=234 ctermfg=119
+highlight SignifySignDelete cterm=bold ctermbg=234 ctermfg=167
+highlight SignifySignChange cterm=bold ctermbg=234 ctermfg=227
 
 " SH {{{1
 hi link shQuote Constant
