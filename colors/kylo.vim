@@ -139,8 +139,7 @@ hi link markdownH2 Constant
 hi link markdownH3 Constant
 hi link markdownH4 Constant
 hi link markdownListMarker Special
-hi link markdownItalic Special
-hi markdownItalic ctermfg=none ctermbg=none cterm=italic
+hi markdownItalic ctermfg=white ctermbg=none cterm=italic
 
 " Netrw {{{1
 hi link NetrwDir Statement
