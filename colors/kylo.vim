@@ -128,6 +128,7 @@ hi link jsFrom Special
 hi link jsThis Special
 hi link jsSuper Special
 hi link jsExceptions Special
+hi link jsTaggedTemplate Special
 
 " Mail {{{1
 hi link mailUrl Statement
