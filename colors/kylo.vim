@@ -147,7 +147,7 @@ hi link markdownListMarker Special
 hi link markdownCodeBlock Special
 hi markdownItalic ctermfg=white ctermbg=none cterm=italic
 hi markdownBold ctermfg=white ctermbg=none cterm=bold
-hi link markdownCodeBlock Statement
+hi link markdownCodeBlock Special
 
 " Netrw {{{1
 hi link NetrwDir Statement
