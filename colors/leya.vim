@@ -198,6 +198,7 @@ hi link TodoTitle Statement
 
 " Markdown
 hi markdownH1 cterm=bold
+hi link markdownHeadingDelimiter markdownH1
 hi markdownH2 cterm=bold
 hi markdownH3 cterm=bold
 hi markdownItalic cterm=italic
