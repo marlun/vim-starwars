@@ -102,7 +102,7 @@ hi link javaScript Normal
 hi link htmlSpecialTagName Normal
 hi link htmlTagName Normal
 
-" JavaScript {{{1
+" JavaScript {{{
 hi link EcmaScriptTemplateStrings Statement
 hi link javaScriptAsyncAwaitKeyword Statement
 hi link javaScriptFunction Statement
@@ -129,18 +129,24 @@ hi link jsThis Special
 hi link jsSuper Special
 hi link jsExceptions Special
 hi link jsTaggedTemplate Special
+hi link jsBuiltins Special
 
 " Mail {{{1
 hi link mailUrl Statement
 
 " Markdown {{{1
-hi link markdownHeadingDelimiter Constant
-hi link markdownH1 Constant
+hi markdownHeadingDelimiter ctermfg=150 ctermbg=none cterm=bold
+hi markdownH1 ctermfg=150 ctermbg=none cterm=bold
+hi markdownH2 ctermfg=150 ctermbg=none cterm=bold
+" hi markdownH1 ctermfg=white ctermbg=none cterm=bold
+" hi markdownH2 ctermfg=white ctermbg=none cterm=bold
 hi link markdownH2 Constant
 hi link markdownH3 Constant
 hi link markdownH4 Constant
 hi link markdownListMarker Special
+hi link markdownCodeBlock Special
 hi markdownItalic ctermfg=white ctermbg=none cterm=italic
+hi markdownBold ctermfg=white ctermbg=none cterm=bold
 
 " Netrw {{{1
 hi link NetrwDir Statement

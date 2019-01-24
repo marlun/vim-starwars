@@ -201,6 +201,7 @@ hi markdownH1 cterm=bold
 hi markdownH2 cterm=bold
 hi markdownH3 cterm=bold
 hi markdownItalic cterm=italic
+hi markdownBold cterm=bold
 
 " Jinja
 hi link JinjaTagBlock Normal
