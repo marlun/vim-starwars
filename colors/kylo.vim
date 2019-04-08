@@ -102,7 +102,7 @@ hi link javaScript Normal
 hi link htmlSpecialTagName Normal
 hi link htmlTagName Normal
 
-" JavaScript {{{
+" JavaScript {{{1
 hi link EcmaScriptTemplateStrings Statement
 hi link javaScriptAsyncAwaitKeyword Statement
 hi link javaScriptFunction Statement
@@ -121,6 +121,7 @@ hi link jsOperatorKeyword Special
 " highlight jsThis ctermfg=221 ctermbg=NONE cterm=none
 hi link jsStorageClass Statement
 hi link jsTernaryIfOperator Normal
+hi link jsRestOperator Normal
 hi link jsArrowFunction Normal
 hi link jsOperator Normal
 hi link jsImport Special
