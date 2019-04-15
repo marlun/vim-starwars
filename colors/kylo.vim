@@ -146,7 +146,7 @@ hi link markdownH3 Constant
 hi link markdownH4 Constant
 hi link markdownListMarker Special
 hi link markdownCodeBlock Special
-hi markdownItalic ctermfg=white ctermbg=none cterm=italic
+hi markdownItalic ctermfg=none ctermbg=none cterm=italic
 hi markdownBold ctermfg=white ctermbg=none cterm=bold
 hi link markdownCodeBlock Special
 
