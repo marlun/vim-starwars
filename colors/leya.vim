@@ -20,7 +20,7 @@ hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Number guifg=#C71585 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=235 ctermbg=NONE cterm=bold,italic
+hi Special guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=235 ctermbg=NONE cterm=italic
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
 hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=bold,italic
 hi Type guifg=#2aa198 guibg=NONE gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
@@ -142,10 +142,10 @@ hi link javaScriptSpecial StringSpecial
 hi link javaScriptIdentifier Statement
 hi link jsRegexpOr Constant
 hi link jsOperator Normal
+hi link jsOperatorKeyword Statement
 hi link jsThis Normal
 hi link jsGlobalObjects Special
 hi link jsGlobalNodeObjects Special
-" hi link jsGlobalNodeObjects Statement
 
 " CSS
 hi link cssClassName Normal
