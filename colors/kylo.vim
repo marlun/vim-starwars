@@ -11,7 +11,7 @@ let colors_name="kylo"
 " Syntax groups {{{1
 hi Normal ctermfg=250 ctermbg=NONE cterm=NONE
 hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
-hi Constant ctermfg=150 ctermbg=NONE cterm=NONE
+hi Constant ctermfg=150 ctermbg=NONE cterm=italic
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -115,7 +115,7 @@ hi link javaScriptPlaceholder Special
 hi link jsFunction Statement
 hi link jsGlobalNodeObjects Special
 hi link jsGlobalObjects Special
-hi link jsOperatorKeyword Special
+hi link jsOperatorKeyword Statement
 " highlight jsGlobalNodeObjects ctermfg=221 ctermbg=NONE cterm=none
 " highlight jsGlobalObjects ctermfg=221 ctermbg=NONE cterm=none
 " highlight jsThis ctermfg=221 ctermbg=NONE cterm=none
@@ -125,6 +125,8 @@ hi link jsRestOperator Normal
 hi link jsArrowFunction Normal
 hi link jsOperator Normal
 hi link jsImport Special
+hi link jsExport Special
+hi link jsExportDefault Special
 hi link jsFrom Special
 hi link jsThis Special
 hi link jsSuper Special
@@ -136,18 +138,21 @@ hi link jsBuiltins Special
 hi link mailUrl Statement
 
 " Markdown {{{1
-hi markdownHeadingDelimiter ctermfg=150 ctermbg=none cterm=bold
-hi markdownH1 ctermfg=150 ctermbg=none cterm=bold
-hi markdownH2 ctermfg=150 ctermbg=none cterm=bold
+" hi markdownHeadingDelimiter ctermfg=150 ctermbg=none cterm=NONE
+" hi markdownH1 ctermfg=150 ctermbg=none cterm=NONE
+" hi markdownH2 ctermfg=150 ctermbg=none cterm=NONE
 " hi markdownH1 ctermfg=white ctermbg=none cterm=bold
 " hi markdownH2 ctermfg=white ctermbg=none cterm=bold
+hi link markdownHeadingDelimiter Constant
+hi link markdownH1 Constant
 hi link markdownH2 Constant
 hi link markdownH3 Constant
 hi link markdownH4 Constant
 hi link markdownListMarker Special
 hi link markdownCodeBlock Special
+hi link markdownCode Special
 hi markdownItalic ctermfg=none ctermbg=none cterm=italic
-hi markdownBold ctermfg=white ctermbg=none cterm=bold
+hi markdownBold ctermfg=none ctermbg=none cterm=bold
 hi link markdownCodeBlock Special
 
 " Netrw {{{1
