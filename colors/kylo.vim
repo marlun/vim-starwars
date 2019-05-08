@@ -11,7 +11,7 @@ let colors_name="kylo"
 " Syntax groups {{{1
 hi Normal ctermfg=250 ctermbg=NONE cterm=NONE
 hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
-hi Constant ctermfg=150 ctermbg=NONE cterm=italic
+hi Constant ctermfg=150 ctermbg=NONE cterm=NONE
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -49,7 +49,7 @@ hi MatchParen guifg=#FFFFAF guibg=NONE gui=NONE ctermfg=220 ctermbg=16 cterm=NON
 hi ModeMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi NonText guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
-hi Pmenu guifg=#111111 guibg=#999999 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
+hi Pmenu guifg=#111111 guibg=#999999 gui=NONE ctermfg=250 ctermbg=234 cterm=NONE
 hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=gray ctermbg=gray cterm=NONE
@@ -181,6 +181,7 @@ highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
 highlight SignifySignAdd cterm=bold ctermbg=234 ctermfg=119
 highlight SignifySignDelete cterm=bold ctermbg=234 ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=234 ctermfg=227
+highlight CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
 
 " SH {{{1
 hi link shQuote Constant
