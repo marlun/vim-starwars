@@ -182,6 +182,9 @@ highlight SignifySignAdd cterm=bold ctermbg=234 ctermfg=119
 highlight SignifySignDelete cterm=bold ctermbg=234 ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=234 ctermfg=227
 highlight CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
+highlight lspReference ctermfg=lightred ctermbg=NONE
+highlight link LspInformationText Todo
+highlight link LspHintText Todo
 
 " SH {{{1
 hi link shQuote Constant
