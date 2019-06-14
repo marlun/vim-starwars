@@ -204,6 +204,8 @@ hi markdownH2 cterm=bold
 hi markdownH3 cterm=bold
 hi markdownItalic cterm=italic
 hi markdownBold cterm=bold
+hi link markdownCode PreProc
+hi link markdownCodeDelimiter PreProc
 
 " Jinja
 hi link JinjaTagBlock Normal

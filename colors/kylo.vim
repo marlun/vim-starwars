@@ -136,6 +136,7 @@ hi link jsBuiltins Special
 
 " Mail {{{1
 hi link mailUrl Statement
+hi link mailQuoted1 Comment
 
 " Markdown {{{1
 " hi markdownHeadingDelimiter ctermfg=150 ctermbg=none cterm=NONE
@@ -184,7 +185,7 @@ highlight SignifySignChange cterm=bold ctermbg=234 ctermfg=227
 highlight CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
 highlight lspReference ctermfg=lightred ctermbg=NONE
 highlight link LspInformationText Todo
-highlight link LspHintText Todo
+highlight link LspHintText Comment
 
 " SH {{{1
 hi link shQuote Constant
