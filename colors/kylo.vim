@@ -186,6 +186,9 @@ highlight CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
 highlight lspReference ctermfg=lightred ctermbg=NONE
 highlight link LspInformationText Todo
 highlight link LspHintText Comment
+highlight link LspHintText Comment
+hi link ALEVirtualTextError Error
+hi link ALEVirtualTextInfo Comment
 
 " SH {{{1
 hi link shQuote Constant
