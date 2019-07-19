@@ -133,6 +133,7 @@ hi link jsSuper Special
 hi link jsExceptions Special
 hi link jsTaggedTemplate Special
 hi link jsBuiltins Special
+hi link jsSpreadOperator Normal
 
 " Mail {{{1
 hi link mailUrl Statement
