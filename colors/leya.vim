@@ -147,6 +147,8 @@ hi link jsThis Special
 hi link jsGlobalObjects Special
 hi link jsGlobalNodeObjects Special
 hi link jsImport Special
+hi link jsTaggedTemplate Normal
+hi jsTemplateString ctermfg=28 ctermbg=NONE cterm=NONE
 
 " CSS
 hi link cssClassName Normal

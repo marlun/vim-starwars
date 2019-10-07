@@ -173,6 +173,7 @@ hi link phpInclude phpFunctions
 hi link phpSpecialFunction Type
 hi link PhpLocalVarCheckError Comment
 hi link phpClasses Type
+hi link phpDocTags Comment
 
 " Plugins {{{1
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
@@ -184,10 +185,10 @@ highlight CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
 highlight lspReference ctermfg=lightred ctermbg=NONE
 highlight LspInformationText ctermfg=lightred ctermbg=NONE
 " highlight link LspInformationText lspReference
-highlight link LspHintText Comment
-highlight link LspHintText Comment
+" highlight link LspHintText Comment
 hi link ALEVirtualTextError Error
 hi link ALEVirtualTextInfo Comment
+highlight LspHintText ctermfg=238 ctermbg=NONE cterm=italic
 
 " SH {{{1
 hi link shQuote Constant
