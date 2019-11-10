@@ -125,6 +125,7 @@ hi link jsRestOperator Normal
 hi link jsArrowFunction Normal
 hi link jsOperator Normal
 hi link jsImport Special
+hi link jsModuleAs Special
 hi link jsExport Special
 hi link jsExportDefault Special
 hi link jsFrom Special
