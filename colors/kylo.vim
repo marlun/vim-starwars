@@ -154,6 +154,7 @@ hi link markdownCode Special
 hi markdownItalic ctermfg=none ctermbg=none cterm=italic
 hi markdownBold ctermfg=none ctermbg=none cterm=bold
 hi link markdownCodeBlock Special
+hi link markdownError Normal
 
 " Netrw {{{1
 hi link NetrwDir Statement
