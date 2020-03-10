@@ -149,6 +149,7 @@ hi link jsGlobalNodeObjects Special
 hi link jsImport Special
 hi link jsTaggedTemplate Normal
 hi jsTemplateString ctermfg=28 ctermbg=NONE cterm=NONE
+hi link jsArrowFunction Normal
 
 " CSS
 hi link cssClassName Normal
