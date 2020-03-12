@@ -13,8 +13,8 @@ let colors_name="leya"
 " Code syntax groups (:h group-name)
 hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=white cterm=NONE
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=italic
-hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=italic
+hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=NONE
+hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
@@ -22,7 +22,7 @@ hi Number guifg=#C71585 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 hi Special gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
-hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=bold,italic
+hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=bold
 hi Type guifg=#2aa198 guibg=NONE gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline term=underline
 
@@ -150,6 +150,7 @@ hi link jsImport Special
 hi link jsTaggedTemplate Normal
 hi jsTemplateString ctermfg=28 ctermbg=NONE cterm=NONE
 hi link jsArrowFunction Normal
+hi jsCommentTodo ctermfg=130 ctermbg=NONE cterm=italic
 
 " CSS
 hi link cssClassName Normal
