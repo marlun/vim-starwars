@@ -148,6 +148,7 @@ hi link jsGlobalObjects Special
 hi link jsGlobalNodeObjects Special
 hi link jsImport Special
 hi link jsTaggedTemplate Normal
+hi link jsExport Statement
 hi jsTemplateString ctermfg=28 ctermbg=NONE cterm=NONE
 hi link jsArrowFunction Normal
 hi jsCommentTodo ctermfg=130 ctermbg=NONE cterm=italic
