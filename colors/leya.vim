@@ -13,7 +13,7 @@ let colors_name="leya"
 " Code syntax groups (:h group-name)
 hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=white cterm=NONE
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=NONE
+hi Comment guifg=#cb4b16 guibg=NONE gui=italic ctermfg=130 ctermbg=NONE cterm=italic
 hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
@@ -147,8 +147,11 @@ hi link jsThis Special
 hi link jsGlobalObjects Special
 hi link jsGlobalNodeObjects Special
 hi link jsImport Special
+hi link jsRestOperator Normal
 hi link jsTaggedTemplate Normal
 hi link jsExport Statement
+hi link jsImport Statement
+hi link jsFrom Statement
 hi jsTemplateString ctermfg=28 ctermbg=NONE cterm=NONE
 hi link jsArrowFunction Normal
 hi jsCommentTodo ctermfg=130 ctermbg=NONE cterm=italic
