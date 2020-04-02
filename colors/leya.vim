@@ -131,7 +131,7 @@ hi link phpBackslashSequences Special
 " JavaScript
 hi link javaScriptFunction Statement
 hi link javaScriptNumber Number
-hi link javaScriptNull Type
+hi link javaScriptNull Number
 hi link javaScriptCommonJS Statement
 hi link jsCommonJS Statement
 hi link jsLabel Special
@@ -152,6 +152,7 @@ hi link jsTaggedTemplate Normal
 hi link jsExport Statement
 hi link jsImport Statement
 hi link jsFrom Statement
+hi link jsNull Number
 hi jsTemplateString ctermfg=28 ctermbg=NONE cterm=NONE
 hi link jsArrowFunction Normal
 hi jsCommentTodo ctermfg=130 ctermbg=NONE cterm=italic
@@ -214,6 +215,7 @@ hi markdownItalic cterm=italic
 hi markdownBold cterm=bold
 hi link markdownCode PreProc
 hi link markdownCodeDelimiter PreProc
+hi markdownError ctermfg=red ctermbg=NONE cterm=none
 
 " Jinja
 hi link JinjaTagBlock Normal
@@ -246,3 +248,7 @@ hi notesInProgress guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cter
 hi notesShortHeading guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=NONE cterm=NONE
 hi notesTitle guifg=#444444 guibg=#FFFDF7 gui=bold ctermfg=235 ctermbg=NONE cterm=NONE
 hi notesTodo guifg=#cb4b16 guibg=NONE gui=bold ctermfg=28 ctermbg=NONE cterm=bold
+
+" Clap
+hi link ClapInput Normal
+hi ClapDisplay guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=lightgray cterm=NONE
