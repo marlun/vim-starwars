@@ -150,6 +150,7 @@ hi link jsImport Special
 hi link jsRestOperator Normal
 hi link jsTaggedTemplate Normal
 hi link jsExport Statement
+hi link jsExportDefault Statement
 hi link jsImport Statement
 hi link jsFrom Statement
 hi link jsNull Number
