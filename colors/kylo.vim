@@ -10,8 +10,8 @@ let colors_name="kylo"
 
 " Syntax groups {{{1
 hi Normal ctermfg=250 ctermbg=NONE cterm=NONE
-hi Comment ctermfg=darkgray ctermbg=NONE cterm=NONE
-hi Constant ctermfg=150 ctermbg=NONE cterm=NONE
+hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
+hi Constant ctermfg=150 ctermbg=NONE cterm=italic
   hi Number ctermfg=175 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -93,6 +93,7 @@ hi link cssClassName Normal
 hi link cssIdentifier Normal
 hi link cssTagName Normal
 hi link cssVendor Statement
+hi link cssFunctionName Special
 
 " HTML {{{1
 hi link htmlEndTag Normal
@@ -101,6 +102,7 @@ hi link htmlItalic Special
 hi link javaScript Normal
 hi link htmlSpecialTagName Normal
 hi link htmlTagName Normal
+hi link htmlTitle Normal
 
 " JavaScript {{{1
 hi link EcmaScriptTemplateStrings Statement
@@ -132,7 +134,7 @@ hi link jsFrom Special
 hi link jsThis Special
 hi link jsSuper Special
 hi link jsExceptions Special
-hi link jsTaggedTemplate Special
+hi link jsTaggedTemplate Constant
 hi link jsBuiltins Special
 hi link jsSpreadOperator Normal
 
@@ -149,11 +151,11 @@ hi link markdownH4 Constant
 hi link markdownAutomaticLink Statement
 hi link markdownUrlDelimiter Statement
 hi link markdownListMarker Special
-hi link markdownCodeBlock Special
 hi link markdownCode Special
+hi link markdownCodeDelimiter Special
+hi link markdownCodeBlock Normal
 hi markdownItalic ctermfg=none ctermbg=none cterm=italic
 hi markdownBold ctermfg=none ctermbg=none cterm=bold
-hi link markdownCodeBlock Special
 hi link markdownError Normal
 
 " Netrw {{{1
