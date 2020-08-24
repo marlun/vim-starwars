@@ -128,35 +128,35 @@ hi link phpLocalVarCheckError Comment
 hi link phpBackslashSequences Special
 
 " JavaScript {{{1
-hi link javaScriptFunction Statement
-hi link javaScriptNumber Number
-hi link javaScriptNull Number
 hi link javaScriptCommonJS Statement
-hi link jsCommonJS Statement
-hi link jsLabel Special
-hi link jsBoolean Boolean
-hi link jsPrototype Normal
-hi link jsFunction Statement
-hi link javaScriptSpecial StringSpecial
+hi link javaScriptFunction Statement
 hi link javaScriptIdentifier Statement
-hi link jsRegexpOr Constant
-hi link jsOperator Normal
-hi link jsOperatorKeyword Statement
-hi link jsThis Special
-hi link jsGlobalObjects Special
-hi link jsGlobalNodeObjects Special
-hi link jsImport Special
-hi link jsRestOperator Normal
-hi link jsTaggedTemplate Constant
+hi link javaScriptNull Number
+hi link javaScriptNumber Number
+hi link javaScriptSpecial StringSpecial
+hi link jsArrowFunction Normal
+hi link jsBoolean Boolean
+hi link jsCommentTodo Special
+hi link jsCommonJS Statement
 hi link jsExport Statement
 hi link jsExportDefault Statement
-hi link jsImport Statement
 hi link jsFrom Statement
+hi link jsFunction Statement
+hi link jsGlobalNodeObjects Special
+hi link jsGlobalObjects Special
+hi link jsImport Special
+hi link jsImport Statement
+hi link jsLabel Special
 hi link jsModuleAs Statement
 hi link jsNull Number
+hi link jsOperator Normal
+hi link jsOperatorKeyword Statement
+hi link jsPrototype Normal
+hi link jsRegexpOr Constant
+hi link jsRestOperator Normal
+hi link jsTaggedTemplate Constant
 hi link jsTemplateString Constant
-hi link jsArrowFunction Normal
-hi link jsCommentTodo Special
+hi link jsThis Special
 
 " TypeScript {{{1
 hi link typescriptImport Statement
