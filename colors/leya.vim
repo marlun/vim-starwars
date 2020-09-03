@@ -53,12 +53,12 @@ hi PmenuSel guifg=#000000 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NO
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=darkgray ctermbg=darkgray cterm=NONE
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=black ctermbg=NONE cterm=NONE
 hi Search guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
-hi SignColumn guifg=#222222 guibg=#d6d2c2 gui=NONE ctermfg=16 ctermbg=gray cterm=NONE
+hi SignColumn guifg=#222222 guibg=#d6d2c2 gui=NONE ctermfg=16 ctermbg=white cterm=NONE
 hi SpecialKey guifg=#979997 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE cterm=NONE
-hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
-hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
-hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
+hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
+hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
+hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=232 ctermbg=159 cterm=NONE
 hi StatusLineNC guifg=NONE guibg=#eee8d5 gui=NONE ctermfg=232 ctermbg=254 cterm=NONE
 hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=252 cterm=NONE
@@ -154,17 +154,36 @@ hi link jsOperatorKeyword Statement
 hi link jsPrototype Normal
 hi link jsRegexpOr Constant
 hi link jsRestOperator Normal
-hi link jsTaggedTemplate Constant
+hi link jsTaggedTemplate Normal
 hi link jsTemplateString Constant
 hi link jsThis Special
 
 " TypeScript {{{1
-hi link typescriptImport Statement
+hi link tsxAttrib Normal
+hi link typescriptArrowFunc Normal
 hi link typescriptBOMWindowProp Special
+hi link typescriptCall Normal
+hi link typescriptCastKeyword Statement
 hi link typescriptDOMDocMethod Normal
+hi link typescriptDOMStorageMethod Normal
+hi link typescriptExceptions Statement
+hi link typescriptFuncComma Normal
+hi link typescriptFuncType Normal
+hi link typescriptGlobal Special
+hi link typescriptImport Statement
+hi link typescriptJSONStaticMethod Normal
+hi link typescriptObjectLabel Normal
+hi link typescriptOptionalMark Special
+hi link typescriptTry Statement
+hi link typescriptTypeReference Type
+hi link typescriptVariable Statement
+hi link typescriptExport Statement
+hi link typescriptBOMHistoryProp Normal
+hi link typescriptMathStaticMethod Normal
 
 " JSON {{{1
 hi link jsonCommentError Comment
+hi link jsonBraces Normal
 
 " CSS {{{1
 hi link cssClassName Normal
@@ -220,6 +239,7 @@ hi markdownError ctermfg=red ctermbg=NONE cterm=none
 " Plugins {{{1
 highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
 highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
+hi ALEWarningSign ctermfg=red ctermbg=NONE cterm=NONE
 
 " Makefiles {{{1
 hi link makeTarget Type
