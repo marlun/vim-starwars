@@ -161,25 +161,26 @@ hi link jsThis Special
 " TypeScript {{{1
 hi link tsxAttrib Normal
 hi link typescriptArrowFunc Normal
+hi link typescriptBOMHistoryProp Normal
 hi link typescriptBOMWindowProp Special
 hi link typescriptCall Normal
 hi link typescriptCastKeyword Statement
 hi link typescriptDOMDocMethod Normal
 hi link typescriptDOMStorageMethod Normal
 hi link typescriptExceptions Statement
+hi link typescriptExport Statement
 hi link typescriptFuncComma Normal
 hi link typescriptFuncType Normal
 hi link typescriptGlobal Special
 hi link typescriptImport Statement
 hi link typescriptJSONStaticMethod Normal
+hi link typescriptKeywordOp Statement
+hi link typescriptMathStaticMethod Normal
 hi link typescriptObjectLabel Normal
 hi link typescriptOptionalMark Special
 hi link typescriptTry Statement
 hi link typescriptTypeReference Type
 hi link typescriptVariable Statement
-hi link typescriptExport Statement
-hi link typescriptBOMHistoryProp Normal
-hi link typescriptMathStaticMethod Normal
 
 " JSON {{{1
 hi link jsonCommentError Comment
