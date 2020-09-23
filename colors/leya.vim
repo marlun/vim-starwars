@@ -90,6 +90,11 @@ hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NON
 hi link gitcommitSelectedType Statement
 hi link gitcommitSelectedFile Normal
 
+" GraphQL {{{1
+hi link graphqlStructure Statement
+hi link graphqlBraces Normal
+hi link graphqlOperator Special
+
 " Statusline {{{1
 hi link User1 Error
 
