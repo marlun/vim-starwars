@@ -166,6 +166,7 @@ hi link jsThis Special
 " TypeScript {{{1
 hi link tsxAttrib Normal
 hi link typescriptArrowFunc Normal
+hi link typescriptBOM Normal
 hi link typescriptBOMHistoryProp Normal
 hi link typescriptBOMWindowProp Special
 hi link typescriptCall Normal
