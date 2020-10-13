@@ -10,8 +10,8 @@ let colors_name="kylo"
 
 " Syntax groups {{{1
 hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
-hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
-hi Constant ctermfg=150 ctermbg=NONE cterm=italic
+hi Comment ctermfg=darkgray ctermbg=NONE cterm=NONE
+hi Constant ctermfg=150 ctermbg=NONE cterm=NONE
 hi Error ctermfg=white ctermbg=darkred cterm=NONE
 hi Function ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
