@@ -248,7 +248,7 @@ highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
 highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
 hi ALEWarningSign ctermfg=red ctermbg=NONE cterm=NONE
 highlight GitGutterAdd    guifg=#009900 ctermfg=34
-highlight GitGutterChange guifg=#bbbb00 ctermfg=27
+highlight GitGutterChange guifg=#bbbb00 ctermfg=93
 highlight GitGutterDelete guifg=#ff2222 ctermfg=196
 
 " Makefiles {{{1
