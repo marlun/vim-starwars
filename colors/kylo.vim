@@ -190,8 +190,8 @@ hi DiffAdd ctermfg=green ctermbg=NONE cterm=NONE
 hi DiffChange ctermfg=green ctermbg=NONE cterm=NONE
 hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=NONE
 hi DiffText ctermfg=16 ctermbg=193 cterm=NONE
-hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=green ctermbg=NONE cterm=NONE
-hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
+hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
+hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
 hi link qfFileName Statement
 hi link vimFuncName PreProc
 hi link vimGroupName Type
