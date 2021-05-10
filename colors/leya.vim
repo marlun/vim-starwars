@@ -12,7 +12,7 @@ let colors_name="leya"
 
 " Code syntax groups (:h group-name) {{{1
 hi Boolean guifg=#2aa198 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
-hi Comment guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
+hi Comment guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=italic
 hi Constant guifg=#009900 guibg=NONE gui=NONE ctermfg=28 ctermbg=NONE cterm=NONE
 hi Error guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
@@ -20,7 +20,8 @@ hi Ignore guifg=#FFFFFF guibg=#FF0000 gui=NONE ctermfg=231 ctermbg=196 cterm=NON
 hi Normal guifg=#444444 guibg=#FFFDF7 gui=NONE ctermfg=235 ctermbg=white cterm=NONE
 hi Number guifg=#C71585 guibg=NONE gui=NONE ctermfg=164 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875FFF guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi Special gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
+hi Special gui=NONE ctermfg=57 ctermbg=NONE cterm=NONE
+" hi Special gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
 hi Statement guifg=#025ffd guibg=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
 hi Todo guifg=#cb4b16 guibg=NONE gui=bold,underline ctermfg=130 ctermbg=NONE cterm=bold
 hi Type guifg=#2aa198 guibg=NONE gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
@@ -53,7 +54,7 @@ hi PmenuSel guifg=#000000 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NO
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=darkgray ctermbg=darkgray cterm=NONE
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=black ctermbg=NONE cterm=NONE
 hi Search guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
-hi SignColumn guifg=#222222 guibg=#d6d2c2 gui=NONE ctermfg=16 ctermbg=white cterm=NONE
+hi SignColumn guifg=#222222 guibg=#d6d2c2 gui=NONE ctermfg=16 ctermbg=255 cterm=NONE
 hi SpecialKey guifg=#979997 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=93 ctermbg=NONE cterm=NONE
@@ -65,7 +66,7 @@ hi TabLine guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=252 cterm=NONE
 hi TabLineFill guifg=NONE guibg=#d8c8ae gui=NONE ctermfg=NONE ctermbg=252 cterm=NONE
 hi TabLineSel guifg=#000000 guibg=#fdf6e3 gui=bold ctermfg=255 ctermbg=33 cterm=NONE
 hi Title guifg=#cb4b16 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
-hi VertSplit guifg=#eee8d5 guibg=#eee8d5 gui=NONE ctermfg=252 ctermbg=252 cterm=NONE
+hi VertSplit guifg=#eee8d5 guibg=#eee8d5 gui=NONE ctermfg=255 ctermbg=255 cterm=NONE
 hi Visual guifg=NONE guibg=#ded9c7 gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#8B0000 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi WildMenu guifg=#262626 guibg=#EEC900 gui=NONE ctermfg=black ctermbg=lightyellow cterm=NONE
@@ -147,7 +148,7 @@ hi link jsExport Statement
 hi link jsExportDefault Statement
 hi link jsFrom Statement
 hi link jsFunction Statement
-hi link jsGlobalNodeObjects Special
+hi link jsGlobalNodeObjects Normal
 hi link jsGlobalObjects Special
 hi link jsImport Special
 hi link jsImport Statement
@@ -157,6 +158,7 @@ hi link jsNull Number
 hi link jsOperator Normal
 hi link jsOperatorKeyword Statement
 hi link jsPrototype Normal
+hi link jsParensError Normal
 hi link jsRegexpOr Constant
 hi link jsRestOperator Normal
 hi link jsTaggedTemplate Normal
@@ -168,25 +170,35 @@ hi link tsxAttrib Normal
 hi link typescriptArrowFunc Normal
 hi link typescriptBOM Normal
 hi link typescriptBOMHistoryProp Normal
-hi link typescriptBOMWindowProp Special
+hi link typescriptBOMNavigatorProp Normal
+hi link typescriptBOMWindowMethod Normal
+hi link typescriptBOMWindowProp Normal
 hi link typescriptCall Normal
 hi link typescriptCastKeyword Statement
 hi link typescriptDOMDocMethod Normal
 hi link typescriptDOMStorageMethod Normal
+hi link typescriptDestructureVariable Normal
 hi link typescriptExceptions Statement
+hi link typescriptES6SetMethod Normal
 hi link typescriptExport Statement
+hi link typescriptFileReaderProp Normal
 hi link typescriptFuncComma Normal
 hi link typescriptFuncType Normal
-hi link typescriptGlobal Special
+hi link typescriptGlobal Normal
 hi link typescriptImport Statement
 hi link typescriptJSONStaticMethod Normal
 hi link typescriptKeywordOp Statement
 hi link typescriptMathStaticMethod Normal
 hi link typescriptObjectLabel Normal
-hi link typescriptOptionalMark Special
+hi link typescriptOptionalMark Normal
+hi link typescriptResponseProp Normal
+hi link typescriptPaymentShippingOptionProp Normal
+hi link typescriptDOMFormProp Normal
 hi link typescriptTry Statement
-hi link typescriptTypeReference Type
+hi link typescriptTypeReference Normal
+hi link typescriptPredefinedType Normal
 hi link typescriptVariable Statement
+hi typescriptDebugger ctermfg=red
 
 " JSON {{{1
 hi link jsonCommentError Comment
@@ -232,27 +244,39 @@ hi link htmlEndTag Normal
 hi link htmlLink Keyword
 
 " Markdown {{{1
-hi link markdownHeadingDelimiter Constant
+hi link markdownCode Normal
+hi link markdownCodeBlock Normal
+hi link markdownCodeDelimiter Normal
 hi link markdownH1 Constant
 hi link markdownH2 Constant
 hi link markdownH3 Constant
-hi markdownItalic cterm=italic
+hi link markdownH4 Constant
+hi link markdownHeadingDelimiter Constant
 hi markdownBold cterm=bold
-hi link markdownCode PreProc
-hi link markdownCodeDelimiter PreProc
-hi link markdownCodeBlock Normal
 hi markdownError ctermfg=red ctermbg=NONE cterm=none
-
-" Plugins {{{1
-highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
-highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
-hi ALEWarningSign ctermfg=red ctermbg=NONE cterm=NONE
-highlight GitGutterAdd    guifg=#009900 ctermfg=34
-highlight GitGutterChange guifg=#bbbb00 ctermfg=93
-highlight GitGutterDelete guifg=#ff2222 ctermfg=196
+hi markdownItalic cterm=italic
 
 " Makefiles {{{1
 hi link makeTarget Type
 hi link makeCommands Normal
+
+" Plugins {{{1
+highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
+highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 gui=bold ctermfg=16 ctermbg=220
+hi link ALEWarning Special
+hi ALEVirtualTextWarning ctermfg=gray
+hi ALEVirtualTextStyleWarning ctermfg=gray
+hi ALEWarningSign ctermfg=208 ctermbg=255 cterm=NONE
+hi ALEInfoSign ctermfg=208 ctermbg=255 cterm=NONE
+hi ALEErrorSign ctermfg=red ctermbg=255 cterm=bold
+" hi ALEVirtualTextInfo ctermfg=249 ctermbg=NONE cterm=NONE
+" hi ALEVirtualTextWarning ctermfg=249 ctermbg=NONE cterm=NONE
+" hi ALEVirtualTextError ctermfg=174 ctermbg=NONE cterm=NONE
+highlight GitGutterAdd guifg=#009900 ctermfg=34 ctermbg=255
+highlight GitGutterChange ctermfg=93 ctermbg=255
+highlight GitGutterDelete ctermfg=196 ctermbg=255
+highlight SignifySignAdd ctermfg=34 ctermbg=255
+highlight SignifySignDelete ctermfg=196 ctermbg=255
+highlight SignifySignChange ctermfg=93 ctermbg=255
 
 " vim: fdm=marker

@@ -10,7 +10,7 @@ let colors_name="kylo"
 
 " Syntax groups {{{1
 hi Boolean ctermfg=175 ctermbg=NONE cterm=NONE
-hi Comment ctermfg=darkgray ctermbg=NONE cterm=NONE
+hi Comment ctermfg=darkgray ctermbg=NONE cterm=italic
 hi Constant ctermfg=150 ctermbg=NONE cterm=NONE
 hi Error ctermfg=white ctermbg=darkred cterm=NONE
 hi Function ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -50,14 +50,14 @@ hi PmenuSbar guifg=#cccccc guibg=#cccccc gui=NONE ctermfg=lightgray ctermbg=ligh
 hi PmenuSel guifg=#111111 guibg=#FFFFAF gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
 hi PmenuThumb guifg=#777777 guibg=#777777 gui=NONE ctermfg=gray ctermbg=gray cterm=NONE
 hi Question guifg=#BCBCBC guibg=#262626 gui=NONE ctermfg=lightgray ctermbg=NONE cterm=NONE
-hi Search guifg=#262626 guibg=#FFFFB6 gui=NONE ctermfg=16 ctermbg=220 cterm=NONE
+hi Search guifg=#262626 guibg=#FFFFB6 gui=NONE ctermfg=16 ctermbg=220 cterm=none
 hi SignColumn guifg=#222222 guibg=#666666 gui=NONE ctermfg=16 ctermbg=234 cterm=NONE
 hi SpecialKey guifg=#555555 guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 hi SpellBad guifg=#FF0000 guibg=NONE gui=underline ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellCap guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
 hi SpellLocal guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
 hi SpellRare guifg=#FCB1FF guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
-hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=255 ctermbg=darkblue cterm=NONE
+hi StatusLine guifg=#FFFFFF guibg=#268bd2 gui=NONE ctermfg=255 ctermbg=26 cterm=NONE
 hi StatusLineNC guifg=#222222 guibg=#666666 gui=NONE ctermfg=234 ctermbg=244 cterm=NONE
 hi TabLine guifg=#555555 guibg=#AAAAAA gui=NONE ctermfg=NONE ctermbg=NONE cterm=reverse
 hi TabLineFill guifg=#555555 guibg=#AAAAAA gui=NONE ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -117,6 +117,7 @@ hi link jsSuper Special
 hi link jsTaggedTemplate Constant
 hi link jsTernaryIfOperator Normal
 hi link jsThis Special
+hi link jsParensError None
 
 " Mail {{{1
 hi link mailQuoted1 Comment
@@ -124,9 +125,9 @@ hi link mailUrl Statement
 
 " Markdown {{{1
 hi link markdownAutomaticLink Statement
-hi link markdownCode Special
+hi link markdownCode Normal
 hi link markdownCodeBlock Normal
-hi link markdownCodeDelimiter Special
+hi link markdownCodeDelimiter Normal
 hi link markdownError Normal
 hi link markdownH1 Constant
 hi link markdownH2 Constant
@@ -165,33 +166,46 @@ hi link shStatement Normal
 hi link tsxAttrib Normal
 hi link typescriptArrowFunc Normal
 hi link typescriptBOMHistoryProp Normal
+hi link typescriptBOMNavigatorProp Normal
 hi link typescriptBOMWindowProp Special
 hi link typescriptCall Normal
 hi link typescriptCastKeyword Statement
+hi link typescriptDestructureVariable Normal
 hi link typescriptDOMDocMethod Normal
 hi link typescriptDOMStorageMethod Normal
+hi link typescriptDOMFormProp Normal
+hi link typescriptEnumKeyword Statement
 hi link typescriptExceptions Statement
 hi link typescriptExport Statement
 hi link typescriptFuncComma Normal
 hi link typescriptFuncType Normal
-hi link typescriptGlobal Special
+hi link typescriptFunctionMethod Normal
+hi link typescriptGlobal Normal
 hi link typescriptImport Statement
 hi link typescriptJSONStaticMethod Normal
 hi link typescriptKeywordOp Statement
 hi link typescriptMathStaticMethod Normal
 hi link typescriptObjectLabel Normal
+hi link typescriptObjectMethod Normal
 hi link typescriptOptionalMark Special
 hi link typescriptTry Statement
-hi link typescriptTypeReference Type
+hi link typescriptTemplateSB Special
+hi link typescriptTypeReference Normal
+hi link typescriptPredefinedType Normal
 hi link typescriptVariable Statement
+hi link typescriptES6SetMethod Normal
 
 " Vim {{{1
-hi DiffAdd ctermfg=green ctermbg=NONE cterm=NONE
-hi DiffChange ctermfg=green ctermbg=NONE cterm=NONE
-hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=NONE
-hi DiffText ctermfg=16 ctermbg=193 cterm=NONE
-hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=darkgreen ctermbg=NONE cterm=NONE
-hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=darkred ctermbg=NONE cterm=NONE
+hi diffFile ctermfg=220 ctermbg=NONE cterm=NONE
+" hi link diffFile Statement
+hi link diffOldFile Number
+hi link diffNewFile Constant
+hi link diffAdded Constant
+hi link diffRemoved Number
+hi link diffSubname Statement
+hi link diffIndexLine Statement
+" hi diffAdded guifg=#008000 guibg=NONE gui=NONE ctermfg=34 ctermbg=NONE cterm=NONE
+" hi diffRemoved guifg=#FF0000 guibg=NONE gui=NONE ctermfg=124 ctermbg=NONE cterm=NONE
 hi link qfFileName Statement
 hi link vimFuncName PreProc
 hi link vimGroupName Type
@@ -201,15 +215,24 @@ hi link vimParenSep Normal
 " Plugins {{{1
 hi link ALEVirtualTextError Error
 hi link ALEVirtualTextInfo Comment
+hi ALEInfoSign ctermfg=220 ctermbg=234 cterm=NONE
+hi ALEWarningSign ctermfg=220 ctermbg=234 cterm=NONE
+hi ALEWarning ctermfg=220 ctermbg=NONE cterm=NONE
+hi ALEErrorSign ctermfg=red ctermbg=234 cterm=none
 hi link NetrwDir Statement
-highlight CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
-highlight ExtraWhitespace guibg=#ff0000 ctermbg=red
-highlight LspHintText ctermfg=238 ctermbg=NONE cterm=italic
-highlight LspInformationText ctermfg=lightred ctermbg=NONE
-highlight NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
-highlight SignifySignAdd cterm=bold ctermbg=234 ctermfg=119
-highlight SignifySignChange cterm=bold ctermbg=234 ctermfg=227
-highlight SignifySignDelete cterm=bold ctermbg=234 ctermfg=167
-highlight lspReference ctermfg=lightred ctermbg=NONE
+hi CocErrorFloat cterm=bold ctermbg=darkred ctermfg=white
+hi ExtraWhitespace guibg=#ff0000 ctermbg=red
+hi LspHintText ctermfg=238 ctermbg=NONE cterm=italic
+hi LspInformationText ctermfg=lightred ctermbg=NONE
+hi NifflerCursorLine guifg=#000000 guibg=#FFD700 ctermfg=16 ctermbg=220
+hi lspReference ctermfg=lightred ctermbg=NONE
+hi link SignifySignAdd Constant
+hi link SignifySignDelete Number
+hi link SignifySignChange Special
+hi link GitGutterAdd Constant
+hi link GitGutterDelete Number
+hi link GitGutterChange Special
+hi fugitiveUnstagedSection ctermfg=255 cterm=bold
+
 
 " vim: fdm=marker
